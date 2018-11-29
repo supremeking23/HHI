@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-#myVideo{
+/*#myVideo{
 	
 	width: 100%;
 	height:520px;
 	margin-bottom: 0px!important;
-}
+}*/
 
 /*header*/
 header{
@@ -45,133 +45,145 @@ header{
 
 
 
-		.image{
-				margin-top: 10px;
+.image{
+		margin-top: 10px;
+
+}
+
+
+.card {
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: 
+
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);
+    background-image: linear-gradient(to top, #12326b, #F3F4F8);
+
+    color: white
+
+}
+
+
+
+#modal-close{
+	background: transparent;
+	color: #fff
+}
+
+
+
+#buttonKnowmore:hover {
+  background-color: #12326b;
+  color: white;
+  transition: 0.3s;
+}
+
+
+
+#btnbacktoTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: rgba(18,50,107,0.8);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+
+#btnbacktoTop:hover{
+	background: #12326b;
+}
+
+
+
+
+.parallax{
+    /* The image used */
+    background-image: url("../img/rawpixel-679094-unsplash.jpg");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.parallax-video{
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;		
+}
+
+
+
+	.kwicks {
+        width: 100%;
+        height: 100px;
+}
+
+
+.kwicks > li {
+			height: 100px;
+        /* overridden by kwicks but good for when JavaScript is disabled */
+        width: 125px;
+        margin-left: 5px;
+        float: left;
+}
+
+#panel-1 { background-color: #53b388; }
+#panel-2 { background-color: #5a69a9; }
+#panel-3 { background-color: #c26468; }
+#panel-4 { background-color: #bf7cc7; }
+
+
+
+@media (max-width: 990px) {
+	body{
 		
-		}
+	}
 
 
-		.card {
-		    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
-		    transition: 0.3s;
-		    background: 
+	.card{
+		width: 100%;
+		margin:10px 0;
+		/*border:5px solid red;*/
+	}
 
-		    
-		}
-
-		.card:hover {
-		    box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);
-		    background-image: linear-gradient(to top, #12326b, #F3F4F8);
-		
-		    color: white
-
-		}
+	#buttonKnowmore{
+		background: ;
+		position: relative;
+		left:80px;
+	}
 
 
 
-		#modal-close{
-			background: transparent;
-			color: #fff
-		}
+	.image{
+		padding-top: 5px
+	}
+
+	.video-section{
+		display: none;
+	}
 
 
-
-		#buttonKnowmore:hover {
-		  background-color: #12326b;
-		  color: white;
-		  transition: 0.3s;
-		}
-
-
-
-		#btnbacktoTop {
-			display: none;
-			position: fixed;
-			bottom: 20px;
-			right: 30px;
-			z-index: 99;
-			font-size: 18px;
-			border: none;
-			outline: none;
-			background-color: rgba(18,50,107,0.8);
-			color: white;
-			cursor: pointer;
-			padding: 15px;
-			border-radius: 4px;
-		}
-
-
-		#btnbacktoTop:hover{
-			background: #12326b;
-		}
-
-
-
-
-		.parallax{
-		    /* The image used */
-		    background-image: url("../img/rawpixel-679094-unsplash.jpg");
-		    width: 100%;
-		    /* Set a specific height */
-		    min-height: 300px; 
-
-		    /* Create the parallax scrolling effect */
-		    background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		}
-
-
-
-		.parallax-video{
-			background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;		
-		}
-
-
-
- 		.kwicks {
-                width: 100%;
-                height: 100px;
-        }
-        
-
-        .kwicks > li {
- 				height: 100px;
-                /* overridden by kwicks but good for when JavaScript is disabled */
-                width: 125px;
-                margin-left: 5px;
-                float: left;
-        }
-
-        #panel-1 { background-color: #53b388; }
-        #panel-2 { background-color: #5a69a9; }
-        #panel-3 { background-color: #c26468; }
-        #panel-4 { background-color: #bf7cc7; }
-
-
-
-		@media (max-width: 990px) {
-			body{
-				
-			}
-
-
-			.card{
-				width: 100%;
-				margin:10px 0;
-				/*border:5px solid red;*/
-			}
-
-			#buttonKnowmore{
-				/*margin-left: 20px*/
-			}
-
-
-		}
+}
 
 
 /*header .cols{
@@ -231,6 +243,9 @@ header .navbar-nav a{
 header .navbar-default .navbar-nav a:hover {
 	color:white;
 	border-bottom: 2px solid #31b413
+	  background: transparent;
+  border-bottom: 4px solid #31b413;
+  text-shadow: none;
 }
 
 header .inbody {
@@ -267,6 +282,15 @@ header .navbar-brand{
 	padding-bottom: 10px;
 
 }
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: ;
+  background: transparent;
+  border-bottom: 4px solid #31b413;
+  text-shadow: none;
+}
+
 
 
 
@@ -421,7 +445,7 @@ section.why-hunters-hub{
 section.core-values{
 	color: black;
 	background:;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 
 

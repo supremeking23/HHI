@@ -43,7 +43,7 @@ $('[data-tooltip="tooltip"]').tooltip();
 	    //console.log(y_scroll_pos);   
 	   // var mobile_view = 235;
 
-
+	//	   alert(1);
 
 		// set to whatever you want it to be
 
@@ -60,7 +60,26 @@ $('[data-tooltip="tooltip"]').tooltip();
 	});	
 
 
+	/*$('.navbar-toggle').on('click',function(){
+		//$('header nav').addClass('inbody');
+		//alert('ds');
+		//background: rgba(22,19,180,.9);
+		//$("header nav").css("background-color","rgba(22,19,180,.9)");
+		$('header nav').addClass('inbody');
 
+		var counter;
+
+		if(counter == 0){
+			counter = 1;
+			$('header nav').addClass('inbody');
+		}else if (counter == 1){
+			$('header nav').removeClass('inbody');
+			counter = 0;
+		}
+
+
+		console.log('counter is' + counter);
+	});*/
 
 });
 

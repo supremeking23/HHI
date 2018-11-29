@@ -1,189 +1,409 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hunter's Hub Inc.</title>
-	 <link rel="shortcut icon" href="img/logo.jpg" />
-	 <meta charset="UTF-8">
-  	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hunter's Hub Inc.</title>
+   <link rel="shortcut icon" href="img/logo.jpg" />
+   <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/jquery.kwicks.min.js" ></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
+    <script src="js/jquery.textillate.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.lettering.js"></script> 
+
+    <script src="js/script.js"></script>
+
 
   <style type="text/css">
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);
-}
 
 
-@media (max-width: 990px) {
-      body{
-        background: skyblue;
-      }
 
 
-      .card{
-        width: 100%;
-        margin:10px 0;
-        border:5px solid red;
-      }
+    .form-client{
+        background: 
     }
 
 
+    header .navbar-default {
+      /*background: rgba(104,73,49,.9);*/
+      background: rgba(22,19,180,.9);
+    }   
 
-@media (max-width: 1200px) {
-     
 
-
-      .card{
-        height: 100%;
-        margin:10px 0;
-        border:5px solid red;
-      }
-    }
   </style>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 cols">
-					<a href="#"><span class="fa fa-phone"></span> 403-0133</a></li>
-				</div>
-				<div class="col-md-3 cols">
-					<a href="#"><span class="fa fa-envelope"></span> info@huntershubinc.com</a>
-				</div>
-				<div class="col-md-3 cols">
-					<a href="#"><span class="fa fa-clock-o"></span> Monday - Friday 8:00am - 5:00pm</a>
-				</div>
-				<div class="col-md-3 cols">
-					<a href="#"><span class="fa fa-map-marker"></span> Unit 1902, Cityland 10 Tower 2, 154 H.V. Dela Costa, Bel-air,  
-                            Makati City</a>
-				</div>
-			</div>
-		</div>
-	</header>
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top""  role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#featured"><img src="img/HHI Landscape Logo copy.png" width="160px"></a>
+    </div><!-- navbar-header -->
+    <div class="collapse navbar-collapse" id="collapse">
+      <ul class="nav navbar-nav navbar-right" style="color: white">
 
 
- <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#featured">Hunter's Hub Inc.</a>
-      </div><!-- navbar-header -->
-      <div class="collapse navbar-collapse" id="collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li class=""><a href="Contact Us.html">Contact Us</a></li>
-          <li><a href="About Us.html">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div><!-- collapse navbar-collapse -->
-    </div><!-- container -->
-  </nav>
+        <li class=""><a href="index.html" class="">Home</a></li>
+        <li  ><a href="contact us.html">Contact Us</a></li>
+        <li class="active"><a href="about us.html">About Us </a>
+          
+        </li>
+       
+        <li><a href="services.html">Services</a></li>
+        <li ><a href="clients.html">Clients</a></li>
+        <li><a href="jobseeker.html">Jobseekers</a></li>
+      </ul>
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+ </nav>   
 
-  <!-- Cards -->
 
- <section class="core-values">
-    <div class="container ">
-      <div class="row ">
-        <br>
-        <div class="col-md-12  text-center">
-          <h2 >Our Core Values</h2>
+
+</header>
+
+  <!--<div class="container-fluid">
+    <div class="about" style= "color:black">
+      <h1>Inquire Online</h1><br>
+      <div class="row">
+        <div class="col-md-3">
+          <input type="text" placeholder="Name" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <input type="text" placeholder="Email" class="form-control">
         </div>
       </div>
-      
-      <br />
-      <br />
-      <center>
-    <div class="row">
-
-        <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 450px">
-          <center>
-          <img src="img/comm.png" class=" img-responsive" width="200px">
-          <h3>Honest Communication</h3>
-          <p align="justify">We are commited to total honesty in all of our business dealings. We deal openly, truthfully
-          and respectfully with all stakeholders and take responsibility of our actions. This strengthens
-          our ties with customers.</p>
-        </center>
+        <br>
+      <div class="row">
+        <div class="col-md-6">
+          <textarea name="message" placeholder="Message" cols="8" rows="8" class="form-control"></textarea>
         </div>
+      </div>
+    -->
 
-        <div class="col-md-3 card" style="margin-right: 35px;height: 450px">
-          <center>
-          <img src="img/dedication.png" class=" img-responsive" style="" width="200px">
-
-          <h3>Dedication</h3>
-          <p align="justify">Everything begins with a focus on our customers. Our goal is to understand them, address their issues and bring them
-          value. We are committed in delivering what we had promised.</p>
-        </center>
-        </div>
-        <div class="col-md-3 card" style="margin-right: 10px;height: 450px">
-          <center>
-          <img src="img/team.png" class="img-responsive" width="200px">
-          <h3>Team Work</h3>
-          <p align="justify">
-            Our highly talented employees must work together to achieve our business goals. Teamwork creates opportunity, allowing employees
-            to learn from one another and from our customers. It is teamwork that builds our competitive edge.
-          </p>
-        </center>
-        </div>
-    </div>
-
-    <br><br>
-
-    <div class="row">
-
-        <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 500px">
-          <center>
-          <img src="img/strong.png" class=" img-responsive" width="150px">
-          <h3>Strong Business Ethics</h3>
-          <p align="justify">Differentiates us from the other manpower support services.</p>
-        </center>
-        </div>
-
-        <div class="col-md-3 card" style="margin-right: 35px;height: 500px">
-          <center>
-          <img src="img/emp3.png" class=" img-responsive" style="" width="150px">
-
-          <h3>Professional Excellence</h3>
-          <p align="justify">Everything begins with a focus on our customers. Our goal is to understand them, address their issues and bring them
-          value. We are committed in delivering what we had promised.</p>
-        </center>
-        </div>
-        <div class="col-md-3 card" style="margin-right: 10px;height: 500px">
-          <center>
-          <img src="img/handshake.png" class="img-responsive" width="150px">
-          <h3>Core Values</h3>
-          <p align="justify">
-            Our customer demands and deserves unwavering quality in our supports and services.
-            We adhere to establish highest quality standards - it is our company-wide commitment
-            to quality that sets us apart.
-          </p>
-        </center>
-        </div>
-    </div>
-    </center>
+<div class="main-body">
+  
+  <div>
+    <br /><br /><br /><br />  <br > <br />
   </div>
-</section>
-<hr>
 
+  <section class="core-values">
+    <div class="container">
+      <div class="row">
+          <br>
+          <div class="col-md-12  text-center">
+            <h2 style="font-weight: bold">Our Core Values</h2>
+          </div>  
+          <br />  <br />   <br />      <br />   
+      </div>
+
+        <div class="row features">
+
+            <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 400px;">
+              <center>
+              <br>
+              <img src="img/feedback2.png" class=" img-responsive" width="150px">
+              <br>
+              <h3>Honest Communication</h3>
+              <br>
+              <p align="justify">We are commited to total honesty in all of our business dealings. We deal openly, truthfully
+              and respectfully with all stakeholders and take responsibility of our actions. This strengthens
+              our ties with customers.</p>
+            </center>
+            </div>
+
+            <div class="col-md-3 card" style="margin-right: 35px;height: 400px;">
+              <center>
+              <br>
+              <img src="img/dedication.png" class=" img-responsive" width="150px">
+              <br>
+              <h3>Dedication</h3>
+              <br>
+              <p align="justify">Everything begins with a focus on our customers. Our goal is to understand them, address their issues and bring them
+              value. We are committed in delivering what we had promised.</p>
+              </center>
+            </div>
+
+            <div class="col-md-3 card" style="margin-right: 35px;height: 400px;">
+              <center>
+              <br>
+              <img src="img/teamwork.png" class="img-responsive" width="150px">
+              <br>
+              <h3>Team Work</h3>
+              <br>
+              <p align="justify">
+                Our highly talented employees must work together to achieve our business goals. Teamwork creates opportunity, allowing employees
+                to learn from one another and from our customers. It is teamwork that builds our competitive edge.
+              </p>
+              </center>
+            </div>
+
+         </div>
+
+        <div class="row features">
+
+            <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/strong.png" class=" img-responsive" width="150px">
+              <br>
+              <h3>Strong Business Ethics</h3>
+              <br>
+              <p align="justify">Differentiates us from the other manpower support services.</p>
+            </center>
+            </div>
+
+            <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/emp3.png" class=" img-responsive" width="150px">
+              <br>
+              <h3>Professional Excellence</h3>
+              <br>
+              <p align="justify">Everything begins with a focus on our customers. Our goal is to understand them, address their issues and bring them
+              value. We are committed in delivering what we had promised.</p>
+            </center>
+            </div>
+
+            <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/handshake.png" class="img-responsive" width="150px">
+              <br>
+              <h3>Core Values</h3>
+              <br>
+              <p align="justify">
+                Our customer demands and deserves unwavering quality in our supports and services.
+                We adhere to establish highest quality standards - it is our company-wide commitment
+                to quality that sets us apart.
+              </p>
+            </center>
+            </div>
+
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="core-values">
+    <div class="container">
+      <div class="row">
+          <br>
+          <div class="col-md-12  text-center">
+            <h2 style="font-weight: bold">People and Skills provided</h2>
+          </div>  
+          <br />  <br />   <br />      <br />   
+      </div>
+
+      <div class="row features">
+          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/callcenter.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Call Center</h3>
+            <br>
+            </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/programming.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Application Programmers</h3>
+            <br>
+          </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/architect.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Solutions Architect</h3>
+            <br>
+            <p align="justify">
+            </p>
+          </center>
+        </div>
+      </div>
+
+        <div class="row features">
+
+          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/documentanalytics.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Technical Document Analyst</h3>
+            <br>
+            </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/software.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Software Engineering</h3>
+            <br>
+          </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/businessanalyst.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Technical Business Analyst</h3>
+            <br>
+          </center>
+          </div>
+        </div>
+
+        <div class="row features">
+
+          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/shield.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Quality Assurance Engineers/Testers</h3>
+            <br>
+            </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/businessarea.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Business Area Analyst</h3>
+            <br>
+          </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/systemanalyst.png" class="img-responsive" width="150px">
+              <br>
+              <h3>System Analyst</h3>
+              <br>
+            </center>
+          </div>
+        </div>
+
+        <div class="row features">
+
+          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/network.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Network Consultants</h3>
+            <br>
+            </center>
+          </div>
+
+          <!--Non IT -->
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/director-desk.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Administrative Assistant</h3>
+            <br>
+          </center>
+          </div>
+
+          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/accounting.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Accounting Staff</h3>
+            <br>
+          </center>
+        </div>
+
+        </div>
+
+
+
+        <div class="row features">
+            <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/production.png" class="img-responsive" width="150px">
+              <br>
+              <h3>Production Staff</h3>
+              <br>
+              </center>
+            </div>
+
+            <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/money.png" class="img-responsive" width="150px">
+              <br>
+              <h3>Account Managers and Associates</h3>
+              <br>
+            </center>
+            </div>
+
+            <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+              <center>
+              <br>
+              <img src="img/human-resources.png" class="img-responsive" width="150px">
+              <br>
+              <h3>HR Assistant</h3>
+              <br>
+            </center>
+          </div>
+        </div>
+
+
+      <div class="row features">
+          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+            <center>
+            <br>
+            <img src="img/manager.png" class="img-responsive" width="150px">
+            <br>
+            <h3>Marketing Assistant</h3>
+            <br>
+            </center>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+</div>
+ 
 
 <footer>
     <div ></div>
@@ -200,7 +420,7 @@
                   <ul class="list-inline ">
                                     <li><a class="media-links facebook" href="https://www.facebook.com/" target="_blank" data-tooltip="tooltip" data-title="Facebook" data-placement="bottom"><span class="fa fa-facebook  "></span></a></li>
                                     <li><a class="media-links twitter" href="https://twitter.com/?" target="_blank"><span class="fa fa-twitter" data-tooltip="tooltip" data-title="Twitter" data-placement="bottom"></span></a></li>
-                                    <li><a class="media-links youtube" href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube" data-tooltip="tooltip" data-title="Youtube" data-placement="bottom"></span></a></li>
+                                   
                                     <li><a class="media-links googleplus" href="https://accounts.google.com" target="_blank"><span class="fa fa-google-plus" data-tooltip="tooltip" data-title="Google Plus" data-placement="bottom"></span></a></li>
                                     <li><a class="media-links linkedin" href="https://www.linkedin.com/"  data-tooltip="tooltip" data-title="Linkedin" data-placement="bottom" target="_blank"><span class="fa fa-linkedin"></span></a></li>
                                 </ul>

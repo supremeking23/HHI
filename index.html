@@ -13,7 +13,7 @@
 
      <!--<link rel="stylesheet" href="css/jquery.kwicks.min.css"> -->
 
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
   
  
 
@@ -21,7 +21,11 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!--<script src="js/jquery.kwicks.min.js" ></script>-->
-	 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
+	<script src="js/jquery.textillate.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script src="js/jquery.lettering.js"></script> 
+
 	<script src="js/script.js"></script>
 	
 
@@ -30,7 +34,14 @@
 	<style type="text/css">
 
 
-
+.content {
+    position: absolute;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
 
 
 	</style>
@@ -61,13 +72,13 @@
 
 	      <li class=""><a href="index.html" class="">Home</a></li>
 	      <li class=""><a href="contact us.html">Contact Us</a></li>
-	      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us </a>
+	      <li><a href="about us.html" class="dropdown-toggle" >About Us </a>
          	
 	      </li>
 	     
 	      <li><a href="services.html">Services</a></li>
-	      <li><a href="careers.html">Clients</a></li>
-	      <li><a href="careers.html">Jobseeker</a></li>
+	      <li><a href="clients.html">Clients</a></li>
+	      <li><a href="jobseeker.html">Jobseekers</a></li>
 	    </ul>
 	  </div><!-- collapse navbar-collapse -->
 	</div><!-- container -->
@@ -105,9 +116,20 @@
 </section>
 
 -->
-<video autoplay muted loop width="100%" height="" style="margin-bottom: 0px!important" class="">
-	<source src="movie1.mp4" type="video/mp4" >
-</video>
+
+<section class="video-section">
+	<video autoplay muted loop width="100%" height="" style="margin-bottom: 0px!important" class="">
+		<source src="movie1.mp4" type="video/mp4" >
+	</video>
+
+	<div class="content">
+	  <h1 class="tlt" style="font-weight: bold;">Hunter's Hub Incorporated</h1>
+	  <p class="tlt" style="font-size: 18px">"Your company of choice, for Headhunting & Sourcing Services in both IT and non-IT industries 
+	  Caters to Professional & Corporate Fields"</p>
+	  
+
+	</div>
+</section>
 
 </header>
 
@@ -159,7 +181,7 @@
 
 		  	<div class="row" style="">
 			  	
-			  	<div class="col-md-5 col-md-offset-4"><button type="button" id="buttonKnowmore" data-target="#knowMorebtn" data-toggle="modal" class="btn btn-flat btn-lg" style="border-radius: 15px;width: 50%;margin-top: 15px;border: 2px solid #12326b" >Know More</button></div>
+			  	<div class="col-md-4 col-md-offset-5 col-xs-12"><button type="button" id="buttonKnowmore" data-target="#knowMorebtn" data-toggle="modal" class="btn btn-flat btn-lg" style="border-radius: 15px;width: 50%;margin-top: 15px;border: 2px solid #12326b" >Know More</button></div>
 			  	
 
 
@@ -170,6 +192,7 @@
 					      <!-- Modal content-->
 					      <div class="modal-content">
 						        <div class="modal-header" style="background: #12326b">
+						        	<img src="img/HHI Landscape Logo copy.png" width="160px">
 						          <button type="button" class="close" data-dismiss="modal" style="background: #12326b">&times;</button>
 						          <h4 class="modal-title"></h4>
 						        </div>
@@ -196,7 +219,7 @@
 		  		<div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 500px">
 		  			<center>
 		  			<img src="img/users.png" class="image img-responsive" style="" width="200px">
-
+		  			<br />
 		  			<h3>Total Commitment</h3>
 		  			<p align="justify" >To service integrity and Quality.
 					We believe that this is the foundation by which customer loyalty is established and additional growth opportunities are created.</p>
@@ -206,6 +229,7 @@
 		  		<div class="col-md-3 card" style="margin-right: 35px;height: 500px">
 		  			<center>
 		  			<img src="img/line chart.png" class="image img-responsive" width="200px">
+		  			<br />
 		  			<h3>Excellent Performance</h3>
 		  			<p align="justify">Geared towards Diligence, Diversity and Creativity.
 					We believe in the rewards of hard work and high energy. Our individual uniqueness has a purpose in understanding our differences while promoting a culture of unity. Our performance is the brand behind our service.</p>
@@ -215,6 +239,7 @@
 		  		<div class="col-md-3 card" style="margin-right: 10px;height: 500px">
 		  			<center>
 		  			<img src="img/lightbulb.png" class="image img-circle img-responsive" width="200px">
+		  			<br />
 		  			<h3>Business Innovation</h3>
 		  			<p align="justify">
 		  				In response to the "right now, right away" trend.
@@ -267,9 +292,9 @@
 									<ul class="list-inline ">
 		                                <li><a class="media-links facebook" href="https://www.facebook.com/" target="_blank" data-tooltip="tooltip" data-title="Facebook" data-placement="bottom"><span class="fa fa-facebook  "></span></a></li>
 		                                <li><a class="media-links twitter" href="https://twitter.com/?" target="_blank" data-tooltip="tooltip" data-title="Twitter" data-placement="bottom"><span class="fa fa-twitter" ></span></a></li>
-		                                <li><a class="media-links youtube" href="https://www.youtube.com/" target="_blank" data-tooltip="tooltip" data-title="Youtube" data-placement="bottom"><span class="fa fa-youtube" ></span></a></li>
-		                                <li><a class="media-links googleplus" href="https://accounts.google.com" target="_blank" data-tooltip="tooltip" data-title="Google Plus" data-placement="bottom"><span class="fa fa-google-plus" ></span></a></li>
-		                                <li><a class="media-links linkedin" href="https://www.linkedin.com/"  data-tooltip="tooltip" data-title="Linkedin" data-placement="bottom" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+		                                
+                                    <li><a class="media-links googleplus" href="https://accounts.google.com" target="_blank"><span class="fa fa-google-plus" data-tooltip="tooltip" data-title="Google Plus" data-placement="bottom"></span></a></li>
+                                    <li><a class="media-links linkedin" href="https://www.linkedin.com/"  data-tooltip="tooltip" data-title="Linkedin" data-placement="bottom" target="_blank"><span class="fa fa-linkedin"></span></a></li>
 		                            </ul>
 								</div>
 
@@ -311,13 +336,31 @@
 
 
 <script>
+
+
+
+
 $().ready(function() {
   /*  $('.kwicks').kwicks({
         maxSize : 250,
         behavior: 'menu'
     });*/
 
-    $('.slider').bxSlider();
+    //$('.slider').bxSlider();
+
+
+});
+
+
+$(function(){
+    $('.tlt').textillate(
+    {
+    	 minDisplayTime: 1000, 
+	    in: { effect: 'flipInX' }, 
+	    out :{  delay: 3, effect: 'lightSpeedOut'},
+    	loop: true,
+    }
+    );
 });
 </script>
 
