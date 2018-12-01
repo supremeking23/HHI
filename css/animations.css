@@ -1,0 +1,21 @@
+.content-mission-vision,
+.site-logo,
+.features
+
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.content-mission-vision.animated,
+.site-logo.animated,
+.features.animated
+ {
+    opacity: 1;
+}
