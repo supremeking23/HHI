@@ -8,19 +8,11 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/animate.min.css">
      <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--<script src="js/jquery.kwicks.min.js" ></script>-->
-    <!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
-    <script src="js/jquery.textillate.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/jquery.lettering.js"></script> 
-
-    <script src="js/script.js"></script>
 
 
   <style type="text/css">
@@ -39,6 +31,33 @@
     }   
 
 
+
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 400px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+    display: none;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+
   </style>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -46,6 +65,10 @@
 
 </head>
 <body>
+
+
+<button  id="btnbacktoTopTwo" title="Go to top" data-tooltip="tooltip"><i class="fa fa-arrow-up"></i></button>
+
 <header>
   <nav class="navbar navbar-default navbar-fixed-top""  role="navigation">
   <div class="container">
@@ -110,12 +133,12 @@
       <div class="row">
           <br>
           <div class="col-md-12  text-center">
-            <h2 style="font-weight: bold">Our Core Values</h2>
+            <h2 style="font-weight: bold" class="core">Our Core Values</h2>
           </div>  
           <br />  <br />   <br />      <br />   
       </div>
 
-        <div class="row features">
+        <div class="row features first-row-core">
 
             <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 600px;">
               <center>
@@ -203,10 +226,17 @@
     </div>
   </section>
 
+  <!-- core-values -->
 
-  <section class="core-values">
+ <!-- <div class="sidenav">
+      <a  id="view_all">View All</a>
+      <a id="it_professionals">IT Professionals</a>
+      <a id="non-it_professionals">non-IT Professionals</a>
+  
+  </div> -->
+  <section class="people-skill-section">
     <div class="container">
-      <div class="row">
+      <div class="row ">
           <br>
           <div class="col-md-12  text-center">
             <h2 style="font-weight: bold">People and Skills provided</h2>
@@ -214,7 +244,7 @@
           <br />  <br />   <br />      <br />   
       </div>
 
-      <div class="row features">
+      <div class="row features first-row-skills">
           <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
             <center>
             <br>
@@ -439,10 +469,11 @@
                 <hr class="light">
                 <h3>Contact Us</h3>
                 <hr class="light">
-                <p><span class="fa fa-map-marker"></span> Unit 1902, Cityland 10 Tower 2, 154 H.V. Dela Costa, Bel-air,  
+                <p align="justify"><span class="fa fa-map-marker"></span> Unit 1902, Cityland 10 Tower 2, 154 H.V. Dela Costa, Bel-air,  
                               Makati City</p>
-                <p><span class="fa fa-envelope"></span> info@huntershubinc.com</p>
-                <p><span class="fa fa-phone"></span> 886-7123</a></p>
+                <p align="justify"><span class="fa fa-envelope"></span> info@huntershubinc.com</p>
+                <p align="justify"><span class="fa fa-phone"></span> 886-7123</a></p>
+                <p align="justify"><span class="fa fa-clock-o"></span> Mon - Fri 8:00 am - 5:00 pm</p>
             </div>
             
 
@@ -459,3 +490,42 @@
 
 </body>
 </html>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.kwicks.min.js" ></script>
+  <!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
+  <script src="js/jquery.textillate.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/jquery.lettering.js"></script> 
+  <script src="js/jquery.waypoints.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+<script>
+
+$(function(){
+
+
+   /* $('.main-body').waypoint(function(direction) {
+        if (direction == "down") {
+            //$('nav').addClass('sticky');
+             $('#btnbacktoTop').fadeIn();
+              $('header nav').addClass('inbody');
+        } else {
+           // $('nav').removeClass('sticky');
+           $('#btnbacktoTop').fadeOut();
+           $('header nav').removeClass('inbody');
+        }
+    }, {
+      offset: '60px;'
+    }); */
+
+
+
+
+
+
+});
+</script>

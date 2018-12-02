@@ -4,7 +4,14 @@
 
 @import url('typography.css');
 @import url('card-style.css');
-@import url('animation.css');
+@import url('animations.css');
+
+
+/*
+	blue :1a2455 , 26,36,85;
+	gray : a09a9a 160,154,154;
+	yellow-green : 9abf0d, 154,191,13"
+*/
 
 
 *{
@@ -98,6 +105,27 @@ header{
 	background: #12326b;
 }
 
+
+#btnbacktoTopTwo {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: rgba(18,50,107,0.8);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+
+#btnbacktoTopTwo:hover{
+	background: #12326b;
+}
 
 
 

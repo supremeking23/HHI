@@ -5,21 +5,8 @@ $(function(){
 	    
 
 	//
-	$('.tlt').textillate();
+	
 
-    $('.main-body').waypoint(function(direction) {
-        if (direction == "down") {
-            //$('nav').addClass('sticky');
-             $('#btnbacktoTop').fadeIn();
-              $('header nav').addClass('inbody');
-        } else {
-           // $('nav').removeClass('sticky');
-           $('#btnbacktoTop').fadeOut();
-           $('header nav').removeClass('inbody');
-        }
-    }, {
-      offset: '60px;'
-    });	
 
 	// When the user scrolls down 20px from the top of the document, show the button
 	/*window.onscroll = function() {scrollFunction()};
@@ -50,6 +37,14 @@ $(function(){
 	});
 
 
+	$('#btnbacktoTopTwo').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+
+
 
 	$('[data-tooltip="tooltip"]').tooltip();
 	//alert(1);
@@ -57,6 +52,40 @@ $(function(){
 
 
 	/* Animations on scroll */
+
+
+	$('.tlt').textillate();
+
+    $('.main-body').waypoint(function(direction) {
+        if (direction == "down") {
+            //$('nav').addClass('sticky');
+             $('#btnbacktoTop').fadeIn();
+              $('header nav').addClass('inbody');
+        } else {
+           // $('nav').removeClass('sticky');
+           $('#btnbacktoTop').fadeOut();
+           $('header nav').removeClass('inbody');
+        }
+    }, {
+      offset: '60px;'
+    });	
+
+
+    //different page
+    $('.people-skill-section').waypoint(function(direction) {
+        if (direction == "down") {
+            //$('nav').addClass('sticky');
+             $('#btnbacktoTopTwo').fadeIn();
+              $('header nav').addClass('inbody');
+        } else {
+           // $('nav').removeClass('sticky');
+           $('#btnbacktoTopTwo').fadeOut();
+           $('header nav').removeClass('inbody');
+        }
+    }, {
+      offset: '60px;'
+    });
+
 	$('.content-mission-vision').waypoint(function(direction) {
 	    $('.content-mission-vision').addClass('animated fadeIn');
 	    $('.site-logo').addClass('animated fadeInUp');
@@ -74,6 +103,43 @@ $(function(){
 	    offset: '50%'
 	});
 
+
+
+    $('.first-row-skills').waypoint(function(direction) {
+      $('.first-row-skills').addClass('animated bounceInUp');
+     
+	      
+	}, {
+	      offset: '50%'
+	});
+
+
+
+
+
+    $('.people-skill-section').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+	      //alert(1);
+	     if (direction == "down") {
+            //$('nav').addClass('sticky');
+             $('.sidenav').fadeIn();
+              
+        } else {
+           // $('nav').removeClass('sticky');
+          	 
+           $('.sidenav').fadeOut();
+        }
+	}, {
+	      offset: '50%'
+	});
+
+
+
+
+	$('#testing1').on('click',function(){
+		alert('12');
+	});
 
  /* $(window).scroll(function() {
 	    var y_scroll_pos = window.pageYOffset;
