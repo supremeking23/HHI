@@ -326,7 +326,7 @@ header .navbar-default .navbar-nav a:hover {
 
 header .navbar-default .navbar-nav .active a:hover {
 	color:white;
-	/*border-bottom: 2px solid #31b413*/
+	/*border-bottom: 2px solid #31b413s*/
 	background: transparent;
   	border-bottom: 4px solid #31b413;
   text-shadow: none;
