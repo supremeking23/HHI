@@ -317,9 +317,18 @@ header .navbar-nav a{
 
 header .navbar-default .navbar-nav a:hover {
 	color:white;
-	border-bottom: 2px solid #31b413
-	  background: transparent;
-  border-bottom: 4px solid #31b413;
+	/*border-bottom: 2px solid #31b413*/
+	background: transparent;
+  	border-bottom: 4px solid #31b413;
+  text-shadow: none;
+}
+
+
+header .navbar-default .navbar-nav .active a:hover {
+	color:white;
+	/*border-bottom: 2px solid #31b413*/
+	background: transparent;
+  	border-bottom: 4px solid #31b413;
   text-shadow: none;
 }
 
