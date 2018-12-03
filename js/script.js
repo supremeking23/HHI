@@ -60,15 +60,31 @@ $(function(){
         if (direction == "down") {
             //$('nav').addClass('sticky');
              $('#btnbacktoTop').fadeIn();
+             $('.icon-bars').fadeIn();
               $('header nav').addClass('inbody');
+              $('.img-brand').css('width','160px');
         } else {
            // $('nav').removeClass('sticky');
            $('#btnbacktoTop').fadeOut();
            $('header nav').removeClass('inbody');
+           $('.icon-bars').fadeOut();
+           $('.img-brand').css('width','200px');
+           
+
         }
     }, {
       offset: '60px;'
     });	
+
+
+    $('#it_professional').click(function(){
+    	$('.it_professional-person').toggle();
+    });
+
+
+    $('#non-it_professional').click(function(){
+    	$('.non-it_professional-person').toggle();
+    })
 
 
     //different page
@@ -76,15 +92,80 @@ $(function(){
         if (direction == "down") {
             //$('nav').addClass('sticky');
              $('#btnbacktoTopTwo').fadeIn();
+             $('.icon-bar').fadeIn();
               $('header nav').addClass('inbody');
         } else {
            // $('nav').removeClass('sticky');
            $('#btnbacktoTopTwo').fadeOut();
+           $('.icon-bar').fadeOut();
            $('header nav').removeClass('inbody');
         }
     }, {
       offset: '60px;'
     });
+
+    $('.people-skill-section').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+	      //alert(1);
+	     if (direction == "down") {
+            //$('nav').addClass('sticky');
+             $('.sidenav').fadeIn();
+              
+        } else {
+           // $('nav').removeClass('sticky');
+          	 
+           $('.sidenav').fadeOut();
+        }
+	}, {
+	      offset: '50%'
+	});
+
+
+    $('.people-skill-section').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+      	$('.people-skill-section-row-1').addClass('animated fadeInLeft');
+	}, {
+	      offset: '50%'
+	});
+
+
+
+    $('.people-skill-section-row-1').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+      	$('.people-skill-section-row-2').addClass('animated fadeInRight');
+	}, {
+	      offset: '50%'
+	});
+
+
+    $('.people-skill-section-row-2').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+      	$('.people-skill-section-row-3').addClass('animated fadeInLeft');
+	}, {
+	      offset: '50%'
+	});
+
+
+    $('.people-skill-section-row-3').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+      	$('.people-skill-section-row-4').addClass('animated fadeInRight');
+	}, {
+	      offset: '50%'
+	});
+
+
+    $('.people-skill-section-row-5').waypoint(function(direction) {
+      //$('.first-row-skills').addClass('animated bounceInUp');
+     
+      	$('.people-skill-section-row-5').addClass('animated fadeInLeft');
+	}, {
+	      offset: '50%'
+	});
 
 	$('.content-mission-vision').waypoint(function(direction) {
 	    $('.content-mission-vision').addClass('animated fadeIn');
@@ -105,34 +186,21 @@ $(function(){
 
 
 
-    $('.first-row-skills').waypoint(function(direction) {
+  /*  $('.first-row-skills').waypoint(function(direction) {
       $('.first-row-skills').addClass('animated bounceInUp');
      
 	      
 	}, {
 	      offset: '50%'
-	});
+	});*/
 
 
 
 
 
-    $('.people-skill-section').waypoint(function(direction) {
-      //$('.first-row-skills').addClass('animated bounceInUp');
-     
-	      //alert(1);
-	     if (direction == "down") {
-            //$('nav').addClass('sticky');
-             $('.sidenav').fadeIn();
-              
-        } else {
-           // $('nav').removeClass('sticky');
-          	 
-           $('.sidenav').fadeOut();
-        }
-	}, {
-	      offset: '50%'
-	});
+
+
+
 
 
 

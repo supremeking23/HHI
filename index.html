@@ -16,11 +16,6 @@
 
      <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
   
- 
-
-
-
-	
 
 
 
@@ -30,16 +25,78 @@
 		.content {
 		    position: absolute;
 		    bottom: 190px;
-		    background: rgba(0, 0, 0, 0.5);
+		   /* background: rgba(0, 0, 0, 0.5);*/
 		    color: #f1f1f1;
 		    width: 100%;
 		    padding: 20px;
 		}
 
-		.content-text{
-			width: 40%
+
+
+		.content-typing {
+		   /* position: absolute;
+		    bottom: 330px;
+		    /*background: rgba(0, 0, 0, 0.5);
+		    color: #f1f1f1;
+		    width: 100%;
+		    padding: 20px;
+		    font-size: 15px;*/
 		}
 
+		.content-text-typing{
+			width: 100%;
+			padding-top: 250px
+		}
+
+
+		.content-text{
+			width: 40%;
+		}
+
+
+
+
+
+.banner-container {
+  overflow: hidden;
+  position: relative;/*width:1024px;
+	margin:25px auto;*/
+}
+
+.banner-container ul { height: auto; }
+
+.banner-container li {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+
+.banner-container li a {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner-container li span.overlay {
+  background: url('img/bg-overlay.png') repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
 	</style>
 
@@ -51,6 +108,15 @@
 <!-- onclick="topFunction()" --->
 <button  id="btnbacktoTop" title="Go to top" data-tooltip="tooltip"><i class="fa fa-arrow-up"></i></button>
 
+
+<div class="icon-bars">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+ 
+</div>
+
 <header>
   <nav class="navbar navbar-default navbar-fixed-top""  role="navigation">
 	<div class="container">
@@ -61,14 +127,14 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a class="navbar-brand" href="index.html"><img src="img/HHI Landscape Logo copy.png" width="160px"></a>
+	    <a class="navbar-brand" href="index.html"><img class="img-brand" src="img/HHI Landscape Logo copy.png" style="width:200px" ></a>
 	  </div><!-- navbar-header -->
 	  <div class="collapse navbar-collapse" id="collapse">
 	    <ul class="nav navbar-nav navbar-right" style="color: white">
 
 
 	      <li class=""><a href="index.html" class="">Home</a></li>
-	      <li class=""><a href="contact_us.html">Contact Us</a></li>
+	     
 	      <li><a href="about_us.html" >About Us </a>
          	
 	      </li>
@@ -122,10 +188,32 @@
 		<div class="content">
 			<div class="content-text">
 			  <h1 class="tlt" style="font-weight: bold;">Hunter's Hub Incorporated</h1>
-			  <p class="tlt" style="font-size: 18px">Your company of choice, for Headhunting & Sourcing Services in both IT and non-IT industries Caters to Professional & Corporate Fields.<br />Your company of choice, etc.</p>
+			  <br />
+			  <p class="tlt" style="font-size: 18px">Your company of choice, for Headhunting & Sourcing Services in both IT and non-IT industries 
+			  	</p>
+			  	<p class="tlt" style="font-size: 18px">Caters to Professional & Corporate Fields</p>
+			</div>
+
+			<button type="button" class="btn btn-primary btn-flat" style="position: relative;">Read More</button>
+		</div>
+	</section>
+
+
+	<section class="typing-section" style="background: ">
+		
+		<!--<img src="img/typing.png" class=" img-responsive" width="100%" style="margin-top: 0px!important">-->
+
+		<div class="content-typing">
+			<div class="content-text-typing">
+			  <h1 class="" style="font-weight: bold;">Hunter's Hub Incorporated</h1>
+			  <p class="" style="font-size: 18px">Your company of choice, for Headhunting & Sourcing Services in both IT and non-IT industries </p>
+			  <br />
+			  <p class="" style="font-size: 18px">Caters to Professional & Corporate Fields</p>
 			</div>
 		</div>
 	</section>
+
+
 </header>
 
 
@@ -135,22 +223,20 @@
   <!--carousel area -->
 
 
-
-
-
-
-<div class="main-body">
+<div class="main-body" >
 	<section class="mission-vision">
 	  	<div class="container ">
 		  	<div class="row ">
 		  		<div class="col-md-6  col-xs-12 content-mission-vision">
 		  			<br><br><br>
-		  			<h2>Company Mission</h2>
-		  			<p align="justify">Our mission is to connect the right jobs to qualified candiddates which closes the gaps between the jobseeker and employee, with the use of our well-designed strategies and our highly skilled and competent team. Both their success is our Business. Building a long term relationship and maintaining a productive workplace is highly important to us. It goes hand in hand with our aim to support and promote the Philippine business community in achieving world-class IT and non-IT services and support through multi-skilled, well trained and highly disciplined people.</p>
+		  			<h2 style="font-weight: bold">Company Mission</h2>
+		  			<br />
+		  			<p align="justify" style="">Our mission is to connect the right jobs to qualified candidates which closes the gaps between the jobseeker and employee, with the use of our well-designed strategies and our highly skilled and competent team. Both their success is our Business. Building a long term relationship and maintaining a productive workplace is highly important to us. It goes hand in hand with our aim to support and promote the Philippine business community in achieving world-class IT and non-IT services and support through multi-skilled, well trained and highly disciplined people.</p>
 
 		  			<hr>
 
-		   			<h2>Company Vision</h2>
+		   			<h2 style="font-weight: bold">Company Vision</h2>
+		   			<br />
 		  			<p align="justify">Our vision is to be the embodiment of excellence in providing the right people, for the right job, with the right skill that is in sync with our Client's vision of success. Hunter's Hub Incorporated aims to be a premier regional player in both IT and non-IT Support Services.</p>
 		  		</div>
 
@@ -165,13 +251,13 @@
 		  	<div class="row parallax" style="">
 		  		<div class="container">
 			  		<div class="col-md-12  text-center" style="color: white">
-			  			<h1 style="padding-top: 50px;font-family: MODULAR 14">Why Hunter's Hub?</h1>
+			  			<h1 style="padding-top: 50px;font-family: MODULAR 14; font-weight: bold">Why Hunter's Hub?</h1>
 			  			
 			  		</div>
 		  		</div>
 		  	
 		  	</div>
-		<div class="container ">
+		<div class="container-fluid three-box">
 
 
 			  	<div class="row" style="">
@@ -209,13 +295,20 @@
 		  		<br />
 		  		<br />
 
-		  	<div class="row features">
+		
+
+
+		
+
+		  	<div class="row features  " style="margin-bottom: 0px;padding-bottom: 55px;padding-top: 20px">
+
+
 
 		  		<div class="col-md-3  card col-md-offset-1" style="margin-right: 35px;height: 600px">
 		  			<center>
 		  			<img src="img/users.png" class="image img-responsive" style="" width="200px">
 		  			<br />
-		  			<h3>Total Commitment</h3>
+		  			<h3 style="font-weight: bold">Total Commitment</h3>
 		  			<p align="justify" class="text-for-image">To service integrity and Quality.
 					We believe that this is the foundation by which customer loyalty is established and additional growth opportunities are created.</p>
 					</center>
@@ -225,7 +318,7 @@
 		  			<center>
 		  			<img src="img/line chart.png" class="image img-responsive" width="200px">
 		  			<br />
-		  			<h3>Excellent Performance</h3>
+		  			<h3 style="font-weight: bold">Excellent Performance</h3>
 		  			<p align="justify" class="text-for-image">Geared towards Diligence, Diversity and Creativity.
 					We believe in the rewards of hard work and high energy. Our individual uniqueness has a purpose in understanding our differences while promoting a culture of unity. Our performance is the brand behind our service.</p>
 					</center>
@@ -235,7 +328,7 @@
 		  			<center>
 		  			<img src="img/lightbulb.png" class="image img-circle img-responsive" width="200px">
 		  			<br />
-		  			<h3>Business Innovation</h3>
+		  			<h3 style="font-weight: bold">Business Innovation</h3>
 		  			<p align="justify" class="text-for-image">
 		  				In response to the "right now, right away" trend.
 						We believe in the continuous assessment of our support and services while having a strong focus on self-upgrading skills to achieve the best practices conforming to best standards.
@@ -293,6 +386,34 @@
 		</div>
 </section> -->
 
+
+    <div class="banner-container">
+        <ul class="ul-width" style="width: 16240px;">
+            <li>
+                <a href="clients.html"><img src="img/banner1.png" alt=""></a>
+                <span class="overlay"></span>     
+            </li>
+            <li>
+                <a href="#"><img src="img/banner3.png" alt=""></a>   
+                <span class="overlay"></span>
+            </li>
+          <!--  <li>
+                <a href="#"><img src="https://unsplash.it/874/639?image=541" alt=""></a>   
+                <span class="overlay"></span>
+            </li>
+            <li>
+                <a href="#"><img src="https://unsplash.it/874/639?image=537" alt=""></a>   
+                <span class="overlay"></span>
+            </li>
+            <li>
+                <a href="#"><img src="https://unsplash.it/874/639?image=538" alt=""></a>   
+                <span class="overlay"></span>
+            </li> -->
+            
+        </ul>
+        <div class="clear"></div>
+    </div>
+
 </div>
 
 
@@ -301,42 +422,73 @@
 		<div ></div>
 		<div class="container-fluid ">
 				<div class="row text-center">
-						<div class="col-md-4">
-								<hr class="light">
-								<h3>About The Company</h3>
-								<hr class="light">
-								<p align="justify">The owner and directors of HHI are currently deployed as consultants themselves. This is an ingredient that has set it apart from the rest. Knowing the problems faced by consultants on day-to-day basis keeps the management informed and allows it to react positively. 
-								HHI has been reaping trust and confidence of this telecom giant as it boast of deploying almost a hundred IT-skilled consultants to date.</p>
 
-								<div class="">
-									<ul class="list-inline ">
-		                                <li><a class="media-links facebook" href="https://www.facebook.com/" target="_blank" data-tooltip="tooltip" data-title="Facebook" data-placement="bottom"><span class="fa fa-facebook  "></span></a></li>
-		                                <li><a class="media-links twitter" href="https://twitter.com/?" target="_blank" data-tooltip="tooltip" data-title="Twitter" data-placement="bottom"><span class="fa fa-twitter" ></span></a></li>
-		                                
-                                    <li><a class="media-links googleplus" href="https://accounts.google.com" target="_blank" data-tooltip="tooltip" data-title="Google Plus" data-placement="bottom"><span class="fa fa-google-plus" ></span></a></li>
-                                    <li><a class="media-links linkedin" href="https://www.linkedin.com/"  data-tooltip="tooltip" data-title="Linkedin" data-placement="bottom" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-		                            </ul>
+
+
+
+                	<div class="col-md-5">
+						<hr class="light">
+	                		<h3 style="font-weight: bold">Contact Us</h3>
+	                	<hr class="light">
+                		
+
+						<div class="col-md-12 col-md-offset-1">
+							
+							<div style="margin-top: 30px;padding-right: 30px;margin-bottom: 90px">
+							
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Name" name="" style="border-radius: 15px">
+									</div>
+
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email" name=""  style="border-radius: 15px">
+									</div>
+
+									<div class="form-group">
+										<textarea class="form-control" style="width: 100%;border-radius: 15px" rows="10" placeholder="Message" ></textarea>
+									</div>
+									<div class="form-group">
+										<button type="button" class="btn btn-primary btn-flat pull-left">Submit</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+
+                	</div>
+
+
+
+
+						<div class="col-md-7">
+							<hr class="light">
+		                		<h3 style="font-weight: bold">Company Address</h3>
+		                	<hr class="light">							
+							
+							<div class="col-md-12">
+								
+								<div style="margin-top: 30px">
+								
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6769704956946!2d121.01506001410635!3d14.560456089828065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9096f41e023%3A0x4c8f3f5a1dd77144!2sCityland+10+Tower+2%2C+156+H.V.+Dela+Costa%2C+Makati%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1543821452774" style="width: 100%;height: 300px" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
 
-						</div>
-						<div class="col-md-4">
-								<hr class="light">
-								<h3>Explore Link</h3>
-								<hr class="light">
-								<p>Our Clients</p>
-								<p>Our Team</p>
-								<p>Site Map</p>
-						</div>
-						<div class="col-md-4">
-								<hr class="light">
-								<h3>Contact Us</h3>
-								<hr class="light">
+							</div>		
+
+						<div class="col-md-12">
 								
+							<div style="margin-top: 30px;line-height: ">
 								<p align="justify"><span class="fa fa-map-marker"></span> Unit 1902, Cityland 10 Tower 2, 154 H.V. Dela Costa, Bel-air,  
                             	Makati City</p>
 								<p align="justify"><span class="fa fa-envelope"></span> info@huntershubinc.com</p>
 								<p align="justify"><span class="fa fa-phone"></span> 886-7123</a></p>
 								<p align="justify"><span class="fa fa-clock-o"></span> Mon - Fri 8:00 am - 5:00 pm</p>
+							</div>
+
+
+						</div>	
+
 						</div>
 						
 
@@ -355,7 +507,7 @@
 
 
 
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.kwicks.min.js" ></script>
 <!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
@@ -395,8 +547,38 @@ $(function(){
     }
     );*/
 
-
+	$(window).load(function(){
+		var sum=0;
+		$('.banner-container li img').each(function(){ 
+			sum += $(this).width();
+		});
+		$('.banner-container ul').width(sum);
+	});
+	$(function(){
+		var winWidth = $(".banner-container").width();
+		var ulWidthCount = 0;
+		ulWidthCount = $('.banner-container li').size();
+		$(".banner-container li").width(winWidth/ulWidthCount);
+		$(".banner-container li").hover(function(){			
+			ulWidthCount = $('.banner-container li').size();
+			var imgWidth = $(this).find("img").width();
+			var bannerLi = winWidth - imgWidth;
+			var remWidth = ulWidthCount - 1;
+			var appWidth = bannerLi/remWidth;
+			$(".banner-container li").stop(true, false).animate({width: appWidth},700);
+			$(this).stop(true, false).animate({width: imgWidth},700);
+			$(this).find("span.overlay").stop(true, false).fadeOut();
+		}, function(){
+			$(this).animate({width: winWidth/ulWidthCount},700);
+			$(".banner-container li").animate({width:winWidth/ulWidthCount},700);
+			$(this).find("span.overlay").fadeIn();
+		});	
+	});
   
 });
+
+
+
+
 </script>
 

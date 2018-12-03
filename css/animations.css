@@ -1,7 +1,8 @@
 .content-mission-vision,
 .site-logo,
 .features,
-.skills
+.skills,
+.people-skill-sections
 
 {
     opacity: 0;
@@ -16,7 +17,8 @@
 
 .content-mission-vision.animated,
 .site-logo.animated,
-.features.animated
+.features.animated,
+.people-skill-sections.animated
  {
     opacity: 1;
 }

@@ -27,7 +27,7 @@
 
     header .navbar-default {
       /*background: rgba(104,73,49,.9);*/
-      background: rgba(22,19,180,.9);
+      background: #1a2455;
     }   
 
 
@@ -68,6 +68,14 @@
 
 
 <button  id="btnbacktoTopTwo" title="Go to top" data-tooltip="tooltip"><i class="fa fa-arrow-up"></i></button>
+<div class="icon-bars">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+ 
+</div>
+
 
 <header>
   <nav class="navbar navbar-default navbar-fixed-top""  role="navigation">
@@ -86,7 +94,7 @@
 
 
         <li class=""><a href="index.html" class="">Home</a></li>
-        <li  ><a href="contact_us.html">Contact Us</a></li>
+        
         <li class="active"><a href="about_us.html">About Us </a>
           
         </li>
@@ -228,12 +236,14 @@
 
   <!-- core-values -->
 
- <!-- <div class="sidenav">
-      <a  id="view_all">View All</a>
-      <a id="it_professionals">IT Professionals</a>
-      <a id="non-it_professionals">non-IT Professionals</a>
-  
-  </div> -->
+  <!--<div class="sidenav">
+      
+      <button  id="it_professional" class="btn btn-primary btn-sm btn-flat btn-block">IT Professionals</button>
+      
+      <button id="non-it_professional" class="btn btn-success btn-sm btn-flat btn-block">non-IT Professionals</button> 
+  </div>  -->
+
+
   <section class="people-skill-section">
     <div class="container">
       <div class="row ">
@@ -244,8 +254,10 @@
           <br />  <br />   <br />      <br />   
       </div>
 
-      <div class="row features first-row-skills">
-          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+
+    <div class="it_professional-person">
+      <div class="row magin-bottom-for-boxes people-skill-section-row-1 people-skill-sections">
+          <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/callcenter.png" class="image img-responsive" width="150px">
@@ -255,7 +267,7 @@
             </center>
           </div>
 
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/programming.png" class="image img-responsive" width="150px">
@@ -265,7 +277,7 @@
           </center>
           </div>
 
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/architect.png" class="image img-responsive" width="150px">
@@ -278,9 +290,9 @@
         </div>
       </div>
 
-        <div class="row features">
+        <div class="row magin-bottom-for-boxes people-skill-section-row-2 people-skill-sections">
 
-          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/documentanalytics.png" class="image img-responsive" width="150px">
@@ -290,7 +302,7 @@
             </center>
           </div>
 
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/software.png" class="image img-responsive" width="150px">
@@ -300,7 +312,7 @@
           </center>
           </div>
 
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/businessanalyst.png" class="image img-responsive" width="150px">
@@ -311,9 +323,9 @@
           </div>
         </div>
 
-        <div class="row features">
+        <div class="row people-skill-sections magin-bottom-for-boxes people-skill-sections people-skill-section-row-3">
 
-          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/shield.png" class="image img-responsive" width="150px">
@@ -323,7 +335,7 @@
             </center>
           </div>
 
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
             <center>
             <br>
             <img src="img/businessarea.png" class="image img-responsive" width="150px">
@@ -342,90 +354,99 @@
               <br>
             </center>
           </div>
-        </div>
 
-        <div class="row features">
 
-          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/network.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Network Consultants</h3>
-            <br>
-            </center>
+
+        </div>     
+    </div>
+
+
+        <div class="row people-skill-sections magin-bottom-for-boxes people-skill-sections people-skill-section-row-4">
+
+          <div class="non-it_professional-person">
+                    <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
+                      <center>
+                      <br>
+                      <img src="img/network.png" class="image img-responsive" width="150px">
+                      <br>
+                      <h3>Network Consultants</h3>
+                      <br>
+                      </center>
+                    </div>
+
+                    <!--Non IT -->
+
+                    <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+                      <center>
+                      <br>
+                      <img src="img/director-desk.png" class="image img-responsive" width="150px">
+                      <br>
+                      <h3>Administrative Assistant</h3>
+                      <br>
+                    </center>
+                    </div>
+
+                    <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+                      <center>
+                      <br>
+                      <img src="img/accounting.png" class="image img-responsive" width="150px">
+                      <br>
+                      <h3>Accounting Staff</h3>
+                      <br>
+                    </center>
+                  </div>
+
+                
+
+
+
+                  <div class="row people-skill-sections magin-bottom-for-boxes people-skill-sections people-skill-section-row-5">
+                      <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+                        <center>
+                        <br>
+                        <img src="img/production.png" class="image img-responsive" width="150px">
+                        <br>
+                        <h3>Production Staff</h3>
+                        <br>
+                        </center>
+                      </div>
+
+                      <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+                        <center>
+                        <br>
+                        <img src="img/money.png" class="image img-responsive" width="150px">
+                        <br>
+                        <h3>Account Managers and Associates</h3>
+                        <br>
+                      </center>
+                      </div>
+
+                      <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
+                        <center>
+                        <br>
+                        <img src="img/human-resources.png" class="image img-responsive" width="150px">
+                        <br>
+                        <h3>HR Assistant</h3>
+                        <br>
+                      </center>
+                    </div>
+                  </div>
+
+
+                <div class="row features">
+                    <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
+                      <center>
+                      <br>
+                      <img src="img/manager.png" class="image img-responsive" width="150px">
+                      <br>
+                      <h3>Marketing Assistant</h3>
+                      <br>
+                      </center>
+                    </div>
+                </div>
           </div>
 
-          <!--Non IT -->
-
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/director-desk.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Administrative Assistant</h3>
-            <br>
-          </center>
-          </div>
-
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/accounting.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Accounting Staff</h3>
-            <br>
-          </center>
-        </div>
-
-        </div>
-
-
-
-        <div class="row features">
-            <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
-              <center>
-              <br>
-              <img src="img/production.png" class="image img-responsive" width="150px">
-              <br>
-              <h3>Production Staff</h3>
-              <br>
-              </center>
-            </div>
-
-            <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-              <center>
-              <br>
-              <img src="img/money.png" class="image img-responsive" width="150px">
-              <br>
-              <h3>Account Managers and Associates</h3>
-              <br>
-            </center>
-            </div>
-
-            <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-              <center>
-              <br>
-              <img src="img/human-resources.png" class="image img-responsive" width="150px">
-              <br>
-              <h3>HR Assistant</h3>
-              <br>
-            </center>
-          </div>
-        </div>
-
-
-      <div class="row features">
-          <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/manager.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Marketing Assistant</h3>
-            <br>
-            </center>
-          </div>
-      </div>
+         
 
     </div>
   </section>
@@ -439,41 +460,73 @@
     <div ></div>
     <div class="container-fluid ">
         <div class="row text-center">
-            <div class="col-md-4">
-                <hr class="light">
-                <h3>About The Company</h3>
-                <hr class="light">
-                <p align="justify">The owner and directors of HHI are currently deployed as consultants themselves. This is an ingredient that has set it apart from the rest. Knowing the problems faced by consultants on day-to-day basis keeps the management informed and allows it to react positively. 
-                HHI has been reaping trust and confidence of this telecom giant as it boast of deploying almost a hundred IT-skilled consultants to date.</p>
 
-                <div class="">
-                  <ul class="list-inline ">
-                                    <li><a class="media-links facebook" href="https://www.facebook.com/" target="_blank" data-tooltip="tooltip" data-title="Facebook" data-placement="bottom"><span class="fa fa-facebook  "></span></a></li>
-                                    <li><a class="media-links twitter" href="https://twitter.com/?" target="_blank"><span class="fa fa-twitter" data-tooltip="tooltip" data-title="Twitter" data-placement="bottom"></span></a></li>
-                                   
-                                    <li><a class="media-links googleplus" href="https://accounts.google.com" target="_blank" data-tooltip="tooltip" data-title="Google Plus" data-placement="bottom"><span class="fa fa-google-plus" ></span></a></li>
-                                    <li><a class="media-links linkedin" href="https://www.linkedin.com/"  data-tooltip="tooltip" data-title="Linkedin" data-placement="bottom" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-                                </ul>
+
+
+
+                  <div class="col-md-5">
+            <hr class="light">
+                      <h3 style="font-weight: bold">Contact Us</h3>
+                    <hr class="light">
+                    
+
+            <div class="col-md-12 col-md-offset-1">
+              
+              <div style="margin-top: 30px;padding-right: 30px;margin-bottom: 90px">
+              
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" name="" style="border-radius: 15px">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email" name=""  style="border-radius: 15px">
+                  </div>
+
+                  <div class="form-group">
+                    <textarea class="form-control" style="width: 100%;border-radius: 15px" rows="10" placeholder="Message" ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-flat pull-left">Submit</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+
+
+                  </div>
+
+
+
+
+            <div class="col-md-7">
+              <hr class="light">
+                        <h3 style="font-weight: bold">Company Address</h3>
+                      <hr class="light">              
+              
+              <div class="col-md-12">
+                
+                <div style="margin-top: 30px">
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6769704956946!2d121.01506001410635!3d14.560456089828065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9096f41e023%3A0x4c8f3f5a1dd77144!2sCityland+10+Tower+2%2C+156+H.V.+Dela+Costa%2C+Makati%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1543821452774" style="width: 100%;height: 300px" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
 
-            </div>
-            <div class="col-md-4">
-                <hr class="light">
-                <h3>Explore Link</h3>
-                <hr class="light">
-                <p>Our Clients</p>
-                <p>Our Team</p>
-                <p>Site Map</p>
-            </div>
-            <div class="col-md-4">
-                <hr class="light">
-                <h3>Contact Us</h3>
-                <hr class="light">
+              </div>    
+
+            <div class="col-md-12">
+                
+              <div style="margin-top: 30px;line-height: ">
                 <p align="justify"><span class="fa fa-map-marker"></span> Unit 1902, Cityland 10 Tower 2, 154 H.V. Dela Costa, Bel-air,  
                               Makati City</p>
                 <p align="justify"><span class="fa fa-envelope"></span> info@huntershubinc.com</p>
                 <p align="justify"><span class="fa fa-phone"></span> 886-7123</a></p>
                 <p align="justify"><span class="fa fa-clock-o"></span> Mon - Fri 8:00 am - 5:00 pm</p>
+              </div>
+
+
+            </div>  
+
             </div>
             
 

@@ -65,7 +65,9 @@ header{
 }
 
 
-
+.site-logo{
+	padding-bottom: 0px
+}
 
 
 
@@ -161,7 +163,7 @@ header{
 
 
 .kwicks > li {
-			height: 100%;
+		height: 100%;
         /* overridden by kwicks but good for when JavaScript is disabled */
         width: 125px;
         margin-left: 5px;
@@ -175,17 +177,61 @@ header{
 
 
 
-@media (max-width: 990px) {
+.icon-bars {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99;
+  display: none;
+}
+
+
+.icon-bars a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+
+.icon-bars a:hover {
+  background-color: #000;
+}
+
+
+.typing-section{
+	display:none;
+	background-image: url("../img/comp.jpg");
+    /* Create the parallax scrolling effect */
+    width: 100%;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media only screen and (max-width: 990px) {
 	body{
 		
 	}
 
 
+	.typing-section{
+		display: block;
+
+	}	
 
 	#buttonKnowmore{
 		background: ;
 		position: relative;
 		left:120px;
+		margin-left: 50px
 	}
 
 
@@ -200,6 +246,18 @@ header{
 
 
 }
+
+
+
+@media only screen and (max-width: 767px) {
+		#buttonKnowmore{
+		position: relative;
+		left:40px;
+		margin-left: 50px
+
+	}
+}
+
 
 
 /*header .cols{
@@ -240,7 +298,8 @@ header .navbar{
 }
 
 header .navbar-default {
-  background-color: transparent;
+  /*background-color: transparent;*/
+  background: rgba(22,19,180,.6);
   border: none;
 }
 
@@ -266,7 +325,8 @@ header .navbar-default .navbar-nav a:hover {
 
 header .inbody {
   /*background: rgba(104,73,49,.9);*/
-  background: rgba(22,19,180,.9);
+  /*background: rgba(22,19,180,.9);*/
+  background: #1a2455;
 }
 
 header .navbar.inbody {
@@ -287,9 +347,9 @@ header .navbar-default .navbar-toggle .icon-bar {
 header .navbar-brand{
 	color: white;
 	background: url('../img/HHI Landscape Logo copy.png');
-	 background-repeat: no-repeat;
-  background-position: 15px 0;
-  height: auto;
+	background-repeat: no-repeat;
+  	background-position: 15px 0;
+ 	height: auto;
 }
 
 
@@ -436,9 +496,10 @@ ul li ul li {
 /*section mission*/
 
 .main-body{
-	background:#F3F4F8;
+	background:;
 	height: auto;
-	color: black
+	color: black;
+
 }
 
 /*section.mission-vision{
@@ -447,6 +508,11 @@ ul li ul li {
 }*/
 
 
+
+section.mission-vision{
+	margin-bottom: 30px;
+
+}
 section.why-hunters-hub{
 	color: black;
 	/*background-image: linear-gradient(to bottom, #12326b, #F3F4F8);*/
@@ -454,6 +520,16 @@ section.why-hunters-hub{
 }
 
 .features{
+	 margin-bottom: 50px;
+
+}
+
+
+.three-box{
+	background: #CFD8DC;
+}
+
+.magin-bottom-for-boxes{
 	 margin-bottom: 50px;
 
 }
@@ -553,7 +629,7 @@ footer ul li a.media-links{
 }
 
 
-.googleplus{
+.google{
 	  background: #bb0000;  /*3B5998*/
       color: white;
        padding: 10px 12px ;

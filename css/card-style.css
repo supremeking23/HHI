@@ -7,9 +7,9 @@
 }
 
  .card:hover  {
-    box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);
-    background-image: linear-gradient(to top, #12326b, #F3F4F8);
-
+    /*box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);*/
+    /*background-image: linear-gradient(to top, #12326b, #F3F4F8);*/
+    background: #12326b;
     color: white
 
 }
@@ -24,7 +24,7 @@
 
 	.card{
 		width: 100%;
-		margin:10px 0;
+		margin:20px 0;
 		/*border:5px solid red;*/
 	}
 
