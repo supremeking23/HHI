@@ -36,6 +36,10 @@ $(function(){
 		return false;
 	});
 
+    $('#learnMore').click(function () {
+       $('html, body').animate({scrollTop: $('.main-body').offset().top}, 1000); 
+    });
+
 
 	$('#btnbacktoTopTwo').click(function () {
 		$('body,html').animate({
@@ -62,13 +66,13 @@ $(function(){
              $('#btnbacktoTop').fadeIn();
              $('.icon-bars').fadeIn();
               $('header nav').addClass('inbody');
-              $('.img-brand').css('width','160px');
+              $('.img-brand').css('width','230px');
         } else {
            // $('nav').removeClass('sticky');
            $('#btnbacktoTop').fadeOut();
            $('header nav').removeClass('inbody');
            $('.icon-bars').fadeOut();
-           $('.img-brand').css('width','200px');
+           $('.img-brand').css('width','250px');
            
 
         }
@@ -92,12 +96,12 @@ $(function(){
         if (direction == "down") {
             //$('nav').addClass('sticky');
              $('#btnbacktoTopTwo').fadeIn();
-             $('.icon-bar').fadeIn();
+             $('.icon-bars').fadeIn();
               $('header nav').addClass('inbody');
         } else {
            // $('nav').removeClass('sticky');
            $('#btnbacktoTopTwo').fadeOut();
-           $('.icon-bar').fadeOut();
+           $('.icon-bars').fadeOut();
            $('header nav').removeClass('inbody');
         }
     }, {
@@ -176,6 +180,16 @@ $(function(){
 	});
 
 
+	$('.w-h-h-text').waypoint(function(direction) {
+	    $('.w-h-h-text').addClass('animated fadeIn');
+	    //$('.site-logo').addClass('animated fadeInUp');
+	    
+	}, {
+	    offset: '50%'
+	});
+	
+
+
 	$('.features').waypoint(function(direction) {
 	    $('.features').addClass('animated fadeIn');
 	   
@@ -184,6 +198,27 @@ $(function(){
 	    offset: '50%'
 	});
 
+
+
+
+
+	$('.partners').waypoint(function(direction) {
+	    $('.partners-image').addClass('animated fadeInLeft');
+	   
+	    
+	}, {
+	    offset: '50%'
+	});
+
+
+
+	$('.our-team').waypoint(function(direction) {
+	    $('.team-image').addClass('animated fadeInLeft');
+	   
+	    
+	}, {
+	    offset: '50%'
+	});
 
 
   /*  $('.first-row-skills').waypoint(function(direction) {

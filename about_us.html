@@ -14,6 +14,9 @@
 
 
 
+     <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/>
+     <link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+  
 
   <style type="text/css">
 
@@ -58,10 +61,44 @@
 }
 
 
+
+.parallax-about{
+    /* The image used */
+    background-image: url("img/about_us.jpg");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.about-us{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #CFD8DC;
+}
+
+
+.partners{
+  background: #eceff0 ;
+}
+
+.our-team{
+  /*#eceff0 !important*/
+  background:#ffffff;
+}
+
   </style>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
+
+
 
 </head>
 <body>
@@ -87,25 +124,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#featured"><img src="img/HHI Landscape Logo copy.png" width="160px"></a>
+      <a class="navbar-brand" href="index.html"><img class="img-brand" src="img/HHI Logo edit2.png" style="width:250px" ></a>
     </div><!-- navbar-header -->
     <div class="collapse navbar-collapse" id="collapse">
       <ul class="nav navbar-nav navbar-right" style="color: white">
 
 
-        <li class=""><a href="index.html" class="">Home</a></li>
-        
-        <li class="active"><a href="about_us.html">About Us </a>
+        <li ><a href="index.html" class="">Home</a></li>
+       
+        <li class="active"><a href="about_us.html" >About Us </a>
           
         </li>
        
         <li><a href="services.html">Services</a></li>
-        <li ><a href="clients.html">Clients</a></li>
+        <li><a href="clients.html">Clients</a></li>
         <li><a href="jobseeker.html">Jobseekers</a></li>
       </ul>
     </div><!-- collapse navbar-collapse -->
   </div><!-- container -->
- </nav>   
+ </nav> 
 
 
 
@@ -133,10 +170,29 @@
 <div class="main-body">
   
   <div>
-    <br /><br /><br /><br />  <br > <br />
+    <!--br /><br /><br /><br />  <br > <br />-->
   </div>
 
-  <section class="core-values">
+
+  <div class="parallax-about"></div>
+
+
+
+  <section class="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 style="font-weight: bold" class="text-center">About Us</h3>
+              <br />
+                <p align="justify" style=" ">The owner and directors of HHI are currently deployed as consultants themselves. This is an ingredient that has set it apart from the rest. Knowing the problems faced by consultants on day-to-day basis keeps the management informed and allows it to react positively. 
+                HHI has been reaping trust and confidence of this telecom giant as it boast of deploying almost a hundred IT-skilled consultants to date.</p>   
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="core-values" style="">
     <div class="container">
       <div class="row">
           <br>
@@ -151,83 +207,65 @@
             <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 600px;">
               <center>
               <br>
-              <img src="img/feedback2.png" class="image img-responsive" width="150px">
+              <img src="img/briefcase.png" class="image img-responsive" width="150px">
               <br>
-              <h3>Honest Communication</h3>
+              <h3>Professionalism and Integrity</h3>
               <br>
-              <p align="justify">We are commited to total honesty in all of our business dealings. We deal openly, truthfully
-              and respectfully with all stakeholders and take responsibility of our actions. This strengthens
-              our ties with customers.</p>
+              <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum .</p>
             </center>
             </div>
 
             <div class="col-md-3 card" style="margin-right: 35px;height: 600px;">
               <center>
               <br>
-              <img src="img/dedication.png" class="image img-responsive" width="150px">
+              <img src="img/effort.png" class="image img-responsive" width="150px">
               <br>
-              <h3>Dedication</h3>
+              <h3>Commitment to our Clients</h3>
               <br>
-              <p align="justify">Everything begins with a focus on our customers. Our goal is to understand them, address their issues and bring them
-              value. We are committed in delivering what we had promised.</p>
+              <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
               </center>
             </div>
 
             <div class="col-md-3 card" style="margin-right: 35px;height: 600px;">
               <center>
               <br>
-              <img src="img/teamwork.png" class="image img-responsive" width="150px">
+              <img src="img/teamworks.png" class="image img-responsive" width="150px">
               <br>
-              <h3>Team Work</h3>
+              <h3>Team Collaboration</h3>
               <br>
               <p align="justify">
-                Our highly talented employees must work together to achieve our business goals. Teamwork creates opportunity, allowing employees
-                to learn from one another and from our customers. It is teamwork that builds our competitive edge.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
               </p>
               </center>
             </div>
 
-         </div>
+        </div>
 
         <div class="row features">
 
             <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 600px;">
               <center>
               <br>
-              <img src="img/strong.png" class="image img-responsive" width="150px">
+              <img src="img/marketing-strategy.png" class="image img-responsive" width="150px">
               <br>
               <h3>Strong Business Ethics</h3>
               <br>
-              <p align="justify">Differentiates us from the other manpower support services.</p>
+              <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
             </center>
             </div>
 
             <div class="col-md-3 card" style="margin-right: 35px;height: 600px;">
               <center>
               <br>
-              <img src="img/emp3.png" class="image img-responsive" width="150px">
+              <img src="img/conversation.png" class="image img-responsive" width="150px">
               <br>
-              <h3>Professional Excellence</h3>
+              <h3>Dependability and Service Quality</h3>
               <br>
-              <p align="justify">Everything begins with a focus on our customers. Our goal is to understand them, address their issues and bring them
-              value. We are committed in delivering what we had promised.</p>
+              <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
             </center>
             </div>
 
-            <div class="col-md-3 card" style="margin-right: 35px;height: 600px;">
-              <center>
-              <br>
-              <img src="img/handshake.png" class="image img-responsive" width="150px">
-              <br>
-              <h3>Core Values</h3>
-              <br>
-              <p align="justify">
-                Our customer demands and deserves unwavering quality in our supports and services.
-                We adhere to establish highest quality standards - it is our company-wide commitment
-                to quality that sets us apart.
-              </p>
-            </center>
-            </div>
+
 
         </div>
 
@@ -244,212 +282,503 @@
   </div>  -->
 
 
-  <section class="people-skill-section">
-    <div class="container">
-      <div class="row ">
+<section class="people-skill-section" style="padding-bottom: 20px">
+  <div class="container">
+      <div class="row">
           <br>
           <div class="col-md-12  text-center">
-            <h2 style="font-weight: bold">People and Skills provided</h2>
+            <h2 style="font-weight: bold" class="core">People and Skills provided</h2>
           </div>  
-          <br />  <br />   <br />      <br />   
+          <br />  <br />     
       </div>
+    <div class="row">
+      <div class="col-md-12">
 
-
-    <div class="it_professional-person">
-      <div class="row magin-bottom-for-boxes people-skill-section-row-1 people-skill-sections">
-          <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/callcenter.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Call Center</h3>
-            <br>
-            </center>
-          </div>
-
-          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/programming.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Application Programmers</h3>
-            <br>
-          </center>
-          </div>
-
-          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/architect.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Solutions Architect</h3>
-            <br>
-            <p align="justify">
+      <div id="example1" class="slider-pro">
+        <div class="sp-slides">
+          
+          <div class="sp-slide">
+            <img class="sp-image" src="img/call-center-unsplash.jpg"
+              />
+            
+            <p class="sp-layer sp-white sp-padding"
+              data-horizontal="50" data-vertical="50"
+              data-show-transition="left" data-hide-transition="up" data-show-delay="400" data-hide-delay="200">
+              Call Center
             </p>
-          </center>
-        </div>
-      </div>
-
-        <div class="row magin-bottom-for-boxes people-skill-section-row-2 people-skill-sections">
-
-          <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/documentanalytics.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Technical Document Analyst</h3>
-            <br>
-            </center>
-          </div>
-
-          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/software.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Software Engineering</h3>
-            <br>
-          </center>
-          </div>
-
-          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/businessanalyst.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Technical Business Analyst</h3>
-            <br>
-          </center>
-          </div>
-        </div>
-
-        <div class="row people-skill-sections magin-bottom-for-boxes people-skill-sections people-skill-section-row-3">
-
-          <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/shield.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Quality Assurance Engineers/Testers</h3>
-            <br>
-            </center>
-          </div>
-
-          <div class="col-md-3 card " style="margin-right: 35px;height: 380px;">
-            <center>
-            <br>
-            <img src="img/businessarea.png" class="image img-responsive" width="150px">
-            <br>
-            <h3>Business Area Analyst</h3>
-            <br>
-          </center>
-          </div>
-
-          <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-              <center>
-              <br>
-              <img src="img/systemanalyst.png" class="image img-responsive" width="150px">
-              <br>
-              <h3>System Analyst</h3>
-              <br>
-            </center>
-          </div>
-
-
-
-        </div>     
-    </div>
-
-
-        <div class="row people-skill-sections magin-bottom-for-boxes people-skill-sections people-skill-section-row-4">
-
-          <div class="non-it_professional-person">
-                    <div class="col-md-3 card col-md-offset-1 " style="margin-right: 35px;height: 380px;">
-                      <center>
-                      <br>
-                      <img src="img/network.png" class="image img-responsive" width="150px">
-                      <br>
-                      <h3>Network Consultants</h3>
-                      <br>
-                      </center>
-                    </div>
-
-                    <!--Non IT -->
-
-                    <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-                      <center>
-                      <br>
-                      <img src="img/director-desk.png" class="image img-responsive" width="150px">
-                      <br>
-                      <h3>Administrative Assistant</h3>
-                      <br>
-                    </center>
-                    </div>
-
-                    <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-                      <center>
-                      <br>
-                      <img src="img/accounting.png" class="image img-responsive" width="150px">
-                      <br>
-                      <h3>Accounting Staff</h3>
-                      <br>
-                    </center>
-                  </div>
-
-                
-
-
-
-                  <div class="row people-skill-sections magin-bottom-for-boxes people-skill-sections people-skill-section-row-5">
-                      <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
-                        <center>
-                        <br>
-                        <img src="img/production.png" class="image img-responsive" width="150px">
-                        <br>
-                        <h3>Production Staff</h3>
-                        <br>
-                        </center>
-                      </div>
-
-                      <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-                        <center>
-                        <br>
-                        <img src="img/money.png" class="image img-responsive" width="150px">
-                        <br>
-                        <h3>Account Managers and Associates</h3>
-                        <br>
-                      </center>
-                      </div>
-
-                      <div class="col-md-3 card" style="margin-right: 35px;height: 380px;">
-                        <center>
-                        <br>
-                        <img src="img/human-resources.png" class="image img-responsive" width="150px">
-                        <br>
-                        <h3>HR Assistant</h3>
-                        <br>
-                      </center>
-                    </div>
-                  </div>
-
-
-                <div class="row features">
-                    <div class="col-md-3 card col-md-offset-1" style="margin-right: 35px;height: 380px;">
-                      <center>
-                      <br>
-                      <img src="img/manager.png" class="image img-responsive" width="150px">
-                      <br>
-                      <h3>Marketing Assistant</h3>
-                      <br>
-                      </center>
-                    </div>
-                </div>
-          </div>
 
          
+          </div>
 
+              <div class="sp-slide">
+                <img class="sp-image" src="img/application-programmers.jpg"
+                  />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Application Programmers
+            </h3>
+
+             <!-- <p class="sp-layer sp-white sp-padding hide-medium-screen" 
+                data-horizontal="40" data-vertical="22%" 
+                data-show-transition="left" data-show-delay="200" data-hide-transition="left" data-hide-delay="200">
+                consectetur adipisicing elit
+              </p>
+
+              <p class="sp-layer sp-black sp-padding hide-small-screen" 
+                data-horizontal="40" data-vertical="34%" data-width="350" 
+                data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p> -->
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Solutions Architect.jpg"
+             />
+              
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Solutions Architect
+            </h3>
+
+            <p class="sp-layer sp-white sp-padding" 
+              data-position="centerCenter" data-vertical="-50" 
+              data-show-transition="right" data-hide-transition="left" data-show-delay="500" >
+              Lorem ipsum dolor sit amet
+            </p>
+
+            <p class="sp-layer sp-black sp-padding hide-small-screen" 
+              data-position="centerCenter" data-vertical="50" 
+              data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">
+              consectetur adipisicing elit
+            </p>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Technical Document Analyst.jpg" />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Technical Document Analyst
+            </h3>
+
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft"
+              data-show-transition="up" data-hide-transition="down">
+              Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </p>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Software Engineering.jpg"
+             />
+              
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Software Engineering
+            </h3>
+
+
+            <p class="sp-layer sp-white sp-padding" 
+              data-vertical="10" data-horizontal="2%" data-width="96%" 
+              data-show-transition="down" data-show-delay="400" data-hide-transition="up">
+              Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </p>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Technical Business Analyst.jpg"
+              />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Technical Business Analyst
+            </h3>
+
+
+            <p class="sp-layer sp-white sp-padding" 
+              data-horizontal="10" data-vertical="10" data-width="35%">
+              Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </p>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Quality Assurance EngineersTesters.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Quality Assurance Engineers/Testers
+            </h3>
+
+              
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-vertical="10" data-horizontal="2%" data-width="96%" 
+              data-show-transition="up" data-show-delay="400" data-hide-transition="down">
+              Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </p>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Business Area Analyst.jpg"
+              />
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Business Area Analyst
+            </h3>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/System Analyst.jpg"
+              />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              System Analyst
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+            <p class="sp-layer sp-white sp-padding hide-small-screen" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="50"
+              data-show-transition="up" data-show-delay="500" data-hide-transition="down">
+              consectetur adipisicing elit <span class="hide-medium-screen">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </p>
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Network Consultants.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Network Consultants
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Administrative Assistant.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+             Administrative Assistant
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Accounting Staff.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Accounting Staff
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Production staff.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Production Staff
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Account Managers and Associates.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+             Account Managers and Associates
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/HR Assistant.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              HR Assistant
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+
+
+
+
+          <div class="sp-slide">
+            <img class="sp-image" src="img/Marketing Assistant.jpg"
+             />
+
+            <h3 class="sp-layer sp-black sp-padding" 
+              data-horizontal="40" data-vertical="10%" 
+              data-show-transition="left" data-hide-transition="left">
+              Marketing Assistant
+            </h3>
+
+            <p class="sp-layer sp-black sp-padding" 
+              data-position="bottomLeft" data-horizontal="50" data-vertical="100"
+              data-show-transition="down" data-show-delay="500" data-hide-transition="up">
+              Lorem ipsum dolor sit amet
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="sp-thumbnails">
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Call Center</div>
+            <div class="sp-thumbnail-description">Dolor sit amet, consectetur adipiscing elit sed</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Application Programmer</div>
+            <div class="sp-thumbnail-description">Tempor incididunt ut labore et dolore magna aliqua</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Solution Architect</div>
+            <div class="sp-thumbnail-description">Ad minim veniam, quis nostrud exercitation</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Technical Document Analysis</div>
+            <div class="sp-thumbnail-description">Nisi ut aliquip ex ea commodo consequat</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Software Engineering</div>
+            <div class="sp-thumbnail-description">Irure dolor in reprehenderit in voluptate velit</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Technical Business Analyst</div>
+            <div class="sp-thumbnail-description">Dolore eu fugiat nulla pariatur excepteur</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Quality Assurance Engineers/Testers</div>
+            <div class="sp-thumbnail-description">Cupidatat non proident, sunt in culpa qui officia</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Business Area Analyst</div>
+            <div class="sp-thumbnail-description">Mollit anim id est laborum sed ut perspiciatis</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">System Analyst</div>
+            <div class="sp-thumbnail-description">Iste natus error sit voluptatem doloremque</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Network Consultants</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Administrative Assistant</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Accounting Staff</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Production Staff</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Account Managers and Associates</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">HR Assistant</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-title">Marketing Assistant</div>
+            <div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<section class="partners" style="">
+  <div class="container">
+      <div class="row" style="">
+          <br>
+          <div class="col-md-12  text-center">
+            <h2 style="font-weight: bold" class="core">Our Partners</h2>
+          </div>  
+          <br />  <br />     
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <img src="img/partners3.png" class="img img-responsive partners-image" style="margin-bottom: 30px">
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="our-team" style="">
+  <div class="container">
+      <div class="row">
+          <br>
+          <div class="col-md-12  text-center">
+            <h2 style="font-weight: bold" class="core">Our Team</h2>
+          </div>  
+          <br />  <br />     
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="row features first-row-core">
+
+              <div class="col-md-3 card-people col-md-offset-1" style="margin-right: 35px;height: 600px;">
+                <center>
+                <br>
+                <img src="img/wanda.jpg" class="image img-responsive img-circle team-image" width="150px">
+                <br>
+
+                
+                <h3>Wanda Maximoff<br /><small>GM Digital Banking</small></h3>
+                <br>
+
+
+                    <p align="justify">Formerly from IBM, Violet is passionate about technology and people. She has done just about every type of role in Sandstone, but what she loves most is recruiting the best of the best to Sandstone.</p>
+        
+
+
+              </center>
+              </div>
+
+              <div class="col-md-3 card-people" style="margin-right: 35px;height: 600px;">
+                <center>
+                <br>
+                <img src="img/james.jpg" class="image img-responsive img-circle team-image" width="150px">
+                <br>
+                <h3>Panu M. Onasabi<br /><small>GM Europe</small></h3>
+                <br>
+                <p align="justify">Formerly from IBM, Violet is passionate about technology and people. She has done just about every type of role in Sandstone, but what she loves most is recruiting the best of the best to Sandstone. </p>
+                </center>
+              </div>
+
+              <div class="col-md-3 card-people" style="margin-right: 35px;height: 600px;">
+                <center>
+                <br>
+                <img src="img/munggo.jpg" class="image img-responsive img-circle team-image" width="150px">
+                <br>
+                <h3>James Lawrence Villanueva<br /><small>CEO</small></h3>
+                <br>
+                <p align="justify">
+                 A hundred year old semi stable old man. Founding member of Justice League and a former SHIELD Agent.
+                </p>
+                </center>
+              </div>
+
+          </div>
+          
+        </div>
+      </div>
+  </div>
+</section>
 
 
 
@@ -465,9 +794,9 @@
 
 
                   <div class="col-md-5">
-            <hr class="light">
-                      <h3 style="font-weight: bold">Contact Us</h3>
-                    <hr class="light">
+            
+                      <h3 style="font-weight: bold;margin-top: 30px">Contact Us</h3>
+                   
                     
 
             <div class="col-md-12 col-md-offset-1">
@@ -501,9 +830,9 @@
 
 
             <div class="col-md-7">
-              <hr class="light">
-                        <h3 style="font-weight: bold">Company Address</h3>
-                      <hr class="light">              
+             
+                        <h3 style="font-weight: bold;margin-top: 30px">Company Address</h3>
+                                
               
               <div class="col-md-12">
                 
@@ -556,29 +885,55 @@
 
   <script src="js/script.js"></script>
 
-<script>
+  <script src="js/jquery.sliderPro.min.js"></script>
 
-$(function(){
-
-
-   /* $('.main-body').waypoint(function(direction) {
-        if (direction == "down") {
-            //$('nav').addClass('sticky');
-             $('#btnbacktoTop').fadeIn();
-              $('header nav').addClass('inbody');
-        } else {
-           // $('nav').removeClass('sticky');
-           $('#btnbacktoTop').fadeOut();
-           $('header nav').removeClass('inbody');
+<script type="text/javascript">
+  $( document ).ready(function( $ ) {
+    $( '#example1' ).sliderPro({
+      width: 960, //960
+      height: 500,
+      arrows: true,
+      buttons: false,
+      waitForLayers: true,
+      thumbnailWidth: 200,
+      thumbnailHeight: 100,
+      thumbnailPointer: true,
+      autoplay: true,
+      autoScaleLayers: false,
+      breakpoints: {
+        500: {
+          thumbnailWidth: 120,
+          thumbnailHeight: 50
         }
-    }, {
-      offset: '60px;'
-    }); */
+      }
+    });
+  });
+</script>
 
-
-
-
-
-
-});
+<script type="text/javascript">
+  $( document ).ready(function( $ ) {
+    $( '#example5' ).sliderPro({
+      width: 670,
+      height: 500,
+      orientation: 'vertical',
+      loop: true,
+      arrows: true,
+      buttons: false,
+      thumbnailsPosition: 'right',
+      thumbnailPointer: true,
+      thumbnailWidth: 290,
+      breakpoints: {
+        800: {
+          thumbnailsPosition: 'bottom',
+          thumbnailWidth: 270,
+          thumbnailHeight: 100
+        },
+        500: {
+          thumbnailsPosition: 'bottom',
+          thumbnailWidth: 120,
+          thumbnailHeight: 50
+        }
+      }
+    });
+  });
 </script>

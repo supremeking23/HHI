@@ -57,46 +57,62 @@
 
 
 
-.banner-container {
-  overflow: hidden;
-  position: relative;/*width:1024px;
-	margin:25px auto;*/
-}
+		.banner-container {
+		  overflow: hidden;
+		  position: relative;/*width:1024px;
+			margin:25px auto;*/
+		}
 
-.banner-container ul { height: auto; }
+		.banner-container ul { height: auto; }
 
-.banner-container li {
-  float: left;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  z-index: 9;
-}
+		.banner-container li {
+		  float: left;
+		  overflow: hidden;
+		  cursor: pointer;
+		  position: relative;
+		  z-index: 9;
+		}
 
-.banner-container li a {
-  display: block;
-  padding: 0px;
-  margin: 0px;
-}
+		.banner-container li a {
+		  display: block;
+		  padding: 0px;
+		  margin: 0px;
+		}
 
-.banner-container li span.overlay {
-  background: url('img/bg-overlay.png') repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
+		.banner-container li span.overlay {
+		  background: url('img/bg-overlay.png') repeat;
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top: 0px;
+		  left: 0px;
+		}
 
 
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
+		.clear {
+		  clear: both;
+		  display: block;
+		  overflow: hidden;
+		  visibility: hidden;
+		  width: 0;
+		  height: 0;
+		}
+
+
+		#learnMore{
+			border-radius: 15px;padding: 10px 25px 10px 25px;border: .4px solid #12326b; color: #12326b;background: transparent;
+		}
+
+		#learnMore:hover{
+			background: #12326b;
+			color: white
+		}
+
+		.content-mission-vision{
+			background: #ffffff;
+
+		}
+
 
 	</style>
 
@@ -114,7 +130,6 @@
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
   <a href="#" class="google"><i class="fa fa-google"></i></a> 
   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
- 
 </div>
 
 <header>
@@ -127,17 +142,15 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a class="navbar-brand" href="index.html"><img class="img-brand" src="img/HHI Landscape Logo copy.png" style="width:200px" ></a>
+	    <a class="navbar-brand" href="index.html"><img class="img-brand" src="img/HHI Logo edit2.png" style="width:250px" ></a>
 	  </div><!-- navbar-header -->
 	  <div class="collapse navbar-collapse" id="collapse">
 	    <ul class="nav navbar-nav navbar-right" style="color: white">
 
 
-	      <li class=""><a href="index.html" class="">Home</a></li>
+	      <li class="active"><a href="index.html" class="">Home</a></li>
 	     
-	      <li><a href="about_us.html" >About Us </a>
-         	
-	      </li>
+	      <li><a href="about_us.html" >About Us </a></li>
 	     
 	      <li><a href="services.html">Services</a></li>
 	      <li><a href="clients.html">Clients</a></li>
@@ -194,7 +207,7 @@
 			  	<p class="tlt" style="font-size: 18px">Caters to Professional & Corporate Fields</p>
 			</div>
 
-			<button type="button" class="btn btn-primary btn-flat" style="position: relative;">Read More</button>
+			<button type="button" class="btn btn-default btn-flat btn-lg" style="position: relative;" id="learnMore">Learn More</button>
 		</div>
 	</section>
 
@@ -227,20 +240,29 @@
 	<section class="mission-vision">
 	  	<div class="container ">
 		  	<div class="row ">
-		  		<div class="col-md-6  col-xs-12 content-mission-vision">
+		  		<div class="col-md-6  col-xs-12 content-mission-vision" style="margin-right: 10px">
 		  			<br><br><br>
 		  			<h2 style="font-weight: bold">Company Mission</h2>
 		  			<br />
 		  			<p align="justify" style="">Our mission is to connect the right jobs to qualified candidates which closes the gaps between the jobseeker and employee, with the use of our well-designed strategies and our highly skilled and competent team. Both their success is our Business. Building a long term relationship and maintaining a productive workplace is highly important to us. It goes hand in hand with our aim to support and promote the Philippine business community in achieving world-class IT and non-IT services and support through multi-skilled, well trained and highly disciplined people.</p>
 
-		  			<hr>
+		  		</div>
 
+		  		
+
+		  		<div class="col-md-5 col-xs-12 content-mission-vision">
+		  			
+		  			<br><br><br>
 		   			<h2 style="font-weight: bold">Company Vision</h2>
 		   			<br />
 		  			<p align="justify">Our vision is to be the embodiment of excellence in providing the right people, for the right job, with the right skill that is in sync with our Client's vision of success. Hunter's Hub Incorporated aims to be a premier regional player in both IT and non-IT Support Services.</p>
 		  		</div>
 
-		   		<div class="col-md-6 col-xs-12 site-logo" >
+
+		  	</div>
+		  	<div class="row">
+
+		   		<div class="col-md-offset-3 col-md-7 col-xs-12 site-logo" >
 		  			<img src="img/HHI Logo Small.png" class="img-responsive" >
 		  		</div>
 		  	</div>
@@ -248,75 +270,54 @@
 	</section>
 	<section class="why-hunters-hub">
 
-		  	<div class="row parallax" style="">
-		  		<div class="container">
-			  		<div class="col-md-12  text-center" style="color: white">
-			  			<h1 style="padding-top: 50px;font-family: MODULAR 14; font-weight: bold">Why Hunter's Hub?</h1>
-			  			
-			  		</div>
-		  		</div>
-		  	
-		  	</div>
-		<div class="container-fluid three-box">
+		<div class="container" style="background: #eee;padding: 25px">
 
 
-			  	<div class="row" style="">
-				  	
-				  	<div class="col-md-4 col-md-offset-5 col-xs-12"><button type="button" id="buttonKnowmore" data-target="#knowMorebtn" data-toggle="modal" class="btn btn-flat btn-lg" style="border-radius: 15px;width: 50%;margin-top: 15px;border: 2px solid #12326b" >Know More</button></div>
-				  	
+			<div class="w-h-h-text">
+				<div class="row">
+					<div class="col-md-12" style="">
+						<h1 class="text-center" style="font-weight: bold">Why Hunter's Hub</h1>
+						<br />
+					</div>
+				</div>
 
 
-					  <!-- Modal -->
-					  <div class="modal fade" id="knowMorebtn" role="dialog">
-						    <div class="modal-dialog">
-						    
-						      <!-- Modal content-->
-						      <div class="modal-content">
-							        <div class="modal-header" style="background: #12326b">
-							        	<img src="img/HHI Landscape Logo copy.png" width="160px">
-							          <button type="button" class="close" data-dismiss="modal" style="background: #12326b">&times;</button>
-							          <h4 class="modal-title"></h4>
-							        </div>
-							        <div class="modal-body"  style="background: #F3F4F8">
-									  <p align="justify">The world is moving so fast; it is sometimes easy to lose sight of the things that truly matter. That's why at Hunter's Hub we created a strong set of company values that drive everything we do.</p>
+				<div class="row">
+					<div class="col-md-12">
+									<p align="justify">The world is moving so fast; it is sometimes easy to lose sight of the things that truly matter. That's why at Hunter's Hub we created a strong set of company values that drive everything we do.</p>
 							          <p align="justify">All of the support services in the country cannot overshadow the moment of truth when one of our employees stand in front of you, and for the most of our services that moment of truth is continous. In essence, HHI is a visitor in your second home and impressions are formed quickly therefore our people define who we are. At HHI, we are keen in attracting and retaining the best people in their areas of proficiency which is critical to the success of not only our business but our clients as well.</p>
 
-							          <p align="justify">Everything we do come back to our values. They are real. They are important. And they impact the entire Hunter's Hub. As you know more about our company you will find that our people are a great resource of pride to us. Our corporate efforts include strong human resources and in addition to that, you will find that eachof our people have been moulded under the Hunter's Hub, Incorporated's strong culture of employee respect and appreciation. There is no element in the long range strategy of the company that is more essential than the need to make our position to be an employer of choice for our industry and the clients that we cater to.</p>
-							        </div>
-							        <div class="modal-footer" style="background: #12326b">
-							          <button type="button" id="modal-close" class="btn btn-default" data-dismiss="modal">Close</button>
-							        </div>
-						      </div>
-						      
-						    </div>
-					  </div>
-			  	</div>
-	  	
-		  		<br />
-		  		<br />
-
+							          <p align="justify">Everything we do come back to our values. They are real. They are important. And they impact the entire Hunter's Hub. As you know more about our company you will find that our people are a great resource of pride to us. Our corporate efforts include strong human resources and in addition to that, you will find that eachof our people have been moulded under the Hunter's Hub, Incorporated's strong culture of employee respect and appreciation. There is no element in the long range strategy of the company that is more essential than the need to make our position to be an employer of choice for our industry and the clients that we cater to.</p>					
+					</div>
+				</div>					
+			</div>
 		
 
+		</div> 	
 
+		<div class="container-fluid">
 		
-
 		  	<div class="row features  " style="margin-bottom: 0px;padding-bottom: 55px;padding-top: 20px">
 
 
 
 		  		<div class="col-md-3  card col-md-offset-1" style="margin-right: 35px;height: 600px">
 		  			<center>
-		  			<img src="img/users.png" class="image img-responsive" style="" width="200px">
+		  			<img src="img/team_2.png" class="image img-responsive" style="" width="200px">
 		  			<br />
+
+
 		  			<h3 style="font-weight: bold">Total Commitment</h3>
 		  			<p align="justify" class="text-for-image">To service integrity and Quality.
 					We believe that this is the foundation by which customer loyalty is established and additional growth opportunities are created.</p>
+
+
 					</center>
 		  		</div>
 
 		  		<div class="col-md-3 card" style="margin-right: 35px;height: 600px">
 		  			<center>
-		  			<img src="img/line chart.png" class="image img-responsive" width="200px">
+		  			<img src="img/growth.png" class="image img-responsive" width="200px">
 		  			<br />
 		  			<h3 style="font-weight: bold">Excellent Performance</h3>
 		  			<p align="justify" class="text-for-image">Geared towards Diligence, Diversity and Creativity.
@@ -326,7 +327,7 @@
 
 		  		<div class="col-md-3 card" style="margin-right: 10px;height: 600px">
 		  			<center>
-		  			<img src="img/lightbulb.png" class="image img-circle img-responsive" width="200px">
+		  			<img src="img/brainstorm.png" class="image img-circle img-responsive" width="200px">
 		  			<br />
 		  			<h3 style="font-weight: bold">Business Innovation</h3>
 		  			<p align="justify" class="text-for-image">
@@ -336,10 +337,13 @@
 		  		</center>
 		  		</div>
 
-
-
 		  	</div>
+
+
 		</div>
+
+
+
 	</section>
 
 
@@ -390,11 +394,11 @@
     <div class="banner-container">
         <ul class="ul-width" style="width: 16240px;">
             <li>
-                <a href="clients.html"><img src="img/banner1.png" alt=""></a>
+                <a href="clients.html"><img src="img/client 1.png" alt=""></a>
                 <span class="overlay"></span>     
             </li>
             <li>
-                <a href="#"><img src="img/banner3.png" alt=""></a>   
+                <a href="#"><img src="img/jobseeker 5.png" alt=""></a>   
                 <span class="overlay"></span>
             </li>
           <!--  <li>
@@ -427,9 +431,9 @@
 
 
                 	<div class="col-md-5">
-						<hr class="light">
-	                		<h3 style="font-weight: bold">Contact Us</h3>
-	                	<hr class="light">
+						
+	                		<h3 style="font-weight: bold;margin-top: 30px">Contact Us</h3>
+	                	
                 		
 
 						<div class="col-md-12 col-md-offset-1">
@@ -438,11 +442,11 @@
 							
 								<form>
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Name" name="" style="border-radius: 15px">
+										<input type="text" class="form-control" placeholder="Name" name="" style="border-radius: 10px">
 									</div>
 
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email" name=""  style="border-radius: 15px">
+										<input type="text" class="form-control" placeholder="Email" name=""  style="border-radius: 10px">
 									</div>
 
 									<div class="form-group">
@@ -463,9 +467,9 @@
 
 
 						<div class="col-md-7">
-							<hr class="light">
-		                		<h3 style="font-weight: bold">Company Address</h3>
-		                	<hr class="light">							
+						
+		                		<h3 style="font-weight: bold;margin-top: 30px">Company Address</h3>
+		                						
 							
 							<div class="col-md-12">
 								
