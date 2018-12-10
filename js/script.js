@@ -67,12 +67,15 @@ $(function(){
              $('.icon-bars').fadeIn();
               $('header nav').addClass('inbody');
               $('.img-brand').css('width','230px');
+              $('.img-brand').attr("src","img/HHI Logo edit2.png");
+
         } else {
            // $('nav').removeClass('sticky');
            $('#btnbacktoTop').fadeOut();
            $('header nav').removeClass('inbody');
            $('.icon-bars').fadeOut();
            $('.img-brand').css('width','250px');
+           $('.img-brand').attr("src","img/HHI Logo edit2.png");
            
 
         }

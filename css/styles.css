@@ -83,7 +83,7 @@ header .navbar{
 }
 
 header .navbar-default {
-  /*background-color: transparent;*/
+ /* background-color: transparent;*/
   background: rgba(22,19,180,.6);
   border: none;
 }
