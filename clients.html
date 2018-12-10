@@ -14,22 +14,7 @@
      <!--<link rel="stylesheet" href="css/jquery.kwicks.min.css"> -->
 
      <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
-  
  
-
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!--<script src="js/jquery.kwicks.min.js" ></script>-->
-	<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
-	<script src="js/jquery.textillate.js"></script>
-	<script src="js/jquery.fittext.js"></script>
-	<script src="js/jquery.lettering.js"></script> 
-
-	<script src="js/script.js"></script>
-	
-
-
 
 	<style type="text/css">
 
@@ -47,6 +32,28 @@
 		}		
 
 
+
+	.parallax-client-image{
+	    /* The image used */
+	    background-image: url("img/for_client3.png");
+	    width: 100%;
+	    /* Set a specific height */
+	    min-height: 500px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+
+	.for-client-text{
+	  padding-top: 25px;
+	  padding-bottom: 25px;
+	  background: #CFD8DC;
+	}
+
 	</style>
 
 </head>
@@ -58,43 +65,37 @@
 <!--<button  id="btnbacktoTop" title="Go to top" data-tooltip="tooltip"><i class="fa fa-arrow-up"></i></button> -->
 
 
-<div class="icon-bars" style="display: block">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="#" class="google"><i class="fa fa-google"></i></a> 
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
- 
-</div>
+
 
 <header>
   <nav class="navbar navbar-default navbar-fixed-top""  role="navigation">
-	<div class="container">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand" href="#featured"><img src="img/HHI Landscape Logo copy.png" width="160px"></a>
-	  </div><!-- navbar-header -->
-	  <div class="collapse navbar-collapse" id="collapse">
-	    <ul class="nav navbar-nav navbar-right" style="color: white">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img class="img-brand" src="img/HHI Logo edit2.png" style="width:250px" ></a>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right" style="color: white">
 
 
-	      <li class=""><a href="index.html" class="">Home</a></li>
-	      
-	      <li><a href="about_us.html" >About Us </a>
-         	
-	      </li>
-	     
-	      <li><a href="services.html">Services</a></li>
-	      <li class="active"><a href="clients.html">Clients</a></li>
-	      <li><a href="jobseeker.html">Jobseekers</a></li>
-	    </ul>
-	  </div><!-- collapse navbar-collapse -->
-	</div><!-- container -->
- </nav>		
+          <li ><a href="index.html" class="">Home</a></li>
+         
+          <li ><a href="about_us.html" >About Us </a>
+            
+          </li>
+         
+          <li><a href="services.html">Services</a></li>
+          <li class="active"><a href="clients.html">Clients</a></li>
+          <li><a href="jobseekers.html">Jobseekers</a></li>
+        </ul>
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav> 	
 
 
 
@@ -111,93 +112,113 @@
 
 
 
-<div class="main-body">
-	
+	<div class="main-body">
+		  	<div class="parallax-client-image">
+
+  			</div>
+
+		  <section class="for-client-text">
+		    <div class="container">
+		      <div class="row">
+		        <div class="col-md-12">
+		          <h3 style="font-weight: bold" class="text-center">For Client</h3>
+		              <br />
+		                <p align="justify" style=" ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem tortor, fermentum sed consectetur ac, dictum vehicula turpis. In ornare posuere facilisis. Nulla lacus lectus, faucibus id erat sit amet, faucibus tincidunt augue. Curabitur aliquam, sapien a volutpat fringilla, dui nunc dapibus erat, quis ullamcorper enim erat id lectus. Nunc a est consequat, auctor tortor at, hendrerit est. Vivamus sagittis orci eget tristique ultrices. Proin diam sem, efficitur nec elit sit amet, consectetur tempus justo. In dapibus augue et vulputate pellentesque.</p>   
+		        </div>
+
+		      </div>
+		    </div>
+		  </section>
+
+		<section class="form-client" style="padding-bottom: 15px;margin-top: 10px">
+				<div class="container">
+				    <div class="row" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8); padding-top: 15px">
+				        <div class="col-md-12">
+				            <div class="well well-sm" style="">
+								<form>
+
+									<div class="form-group"> 
+										<label for="firstname" class="control-label">First Name</label>
+										<input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+									</div>
+
+
+									<div class="form-group"> 
+										<label for="lastname" class="control-label">Last Name</label>
+										<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+									</div>	
+
+									<div class="form-group"> 
+										<label for="company" class="control-label">Company </label>
+										<input type="text" class="form-control" id="company" name="company" placeholder="Company">
+									</div>	
+
+									<div class="form-group"> 
+										<label for="position" class="control-label">Position in the Company</label>
+										<input type="text" class="form-control" id="position" name="position" placeholder="Position">
+									</div>
+
+									<div class="form-group"> 
+										<label for="size" class="control-label">Size of Company</label>
+										<input type="text" class="form-control" id="size" name="size" placeholder="Size of Company">
+									</div>
+
+									<div class="form-group"> 
+										<label for="industry" class="control-label">Industry</label>
+										<input type="text" class="form-control" id="industry" name="industry" placeholder="Industry">
+									</div>	
+
+									<div class="form-group"> 
+										<label for="email" class="control-label">Email </label>
+										<input type="text" class="form-control" id="email" name="email" placeholder="Email">
+									</div>
+
+
+									<div class="form-group"> 
+										<label for="phone" class="control-label">Phone Number </label>
+										<input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+									</div>
+								
+									
+									<div class="form-group"> <!-- Zip Code-->
+										<label for="zip_id" class="control-label">Zip Code</label>
+										<input type="text" class="form-control" id="zip_id" name="zip" placeholder="Zip Code">
+									</div>	
+
+
+									<div class="form-group"> <!-- Zip Code-->
+										<label for="inquiries" class="control-label"></label>
+										<textarea class="form-control" name="inquiries"  rows="10" style="font-weight: bold;">Any further inquiries?</textarea>
+									</div>		
+									
+									<div class="form-group"> 
+										<label for="" class="control-label">Would you like to submit any available job description?</label>
+										<button type="button" class="btn btn-primary" id="submit-file">Yes</button>
+										<button type="button" class="btn btn-primary" id="cancel-submit" style="display: none;">No</button>
+									</div>   
+
+									<div class="form-group file-upload" style="display: none;">
+										<input type="file" name="file">
+									</div>
+
+									<div class="form-group"> 
+										<label for="" class="control-label"></label>
+										<center><button type="submit" class="btn btn-primary btn-flat" >Submit</button></center>
+									</div>  								
+									
+								</form>	
+				            </div>
+				        </div>
+				    </div>
+				</div>
+		</section>
 	<div>
-		<br /><br /><br /><br /><br /><br />		
-	</div>
-	<section class="form-client" style="padding-bottom: 15px;">
-			<div class="container">
-			    <div class="row" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8); padding-top: 15px">
-			        <div class="col-md-12">
-			            <div class="well well-sm" style="">
-							<form>
-
-								<div class="form-group"> 
-									<label for="firstname" class="control-label">First Name</label>
-									<input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-								</div>
 
 
-								<div class="form-group"> 
-									<label for="lastname" class="control-label">Last Name</label>
-									<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-								</div>	
-
-								<div class="form-group"> 
-									<label for="company" class="control-label">Company </label>
-									<input type="text" class="form-control" id="company" name="company" placeholder="Company">
-								</div>	
-
-								<div class="form-group"> 
-									<label for="position" class="control-label">Position in the Company</label>
-									<input type="text" class="form-control" id="position" name="position" placeholder="Position">
-								</div>
-
-								<div class="form-group"> 
-									<label for="size" class="control-label">Size of Company</label>
-									<input type="text" class="form-control" id="size" name="size" placeholder="Size of Company">
-								</div>
-
-								<div class="form-group"> 
-									<label for="industry" class="control-label">Industry</label>
-									<input type="text" class="form-control" id="industry" name="industry" placeholder="Industry">
-								</div>	
-
-								<div class="form-group"> 
-									<label for="email" class="control-label">Email </label>
-									<input type="text" class="form-control" id="email" name="email" placeholder="Email">
-								</div>
 
 
-								<div class="form-group"> 
-									<label for="phone" class="control-label">Phone Number </label>
-									<input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
-								</div>
-							
-								
-								<div class="form-group"> <!-- Zip Code-->
-									<label for="zip_id" class="control-label">Zip Code</label>
-									<input type="text" class="form-control" id="zip_id" name="zip" placeholder="Zip Code">
-								</div>	
 
 
-								<div class="form-group"> <!-- Zip Code-->
-									<label for="inquiries" class="control-label"></label>
-									<textarea class="form-control" name="inquiries"  rows="10" style="font-weight: bold;">Any further inquiries?</textarea>
-								</div>		
-								
-								<div class="form-group"> 
-									<label for="" class="control-label">Would you like to submit any available job description?</label>
-									<button type="button" class="btn btn-primary" id="submit-file">Yes</button>
-									<button type="button" class="btn btn-primary" id="cancel-submit" style="display: none;">No</button>
-								</div>   
-
-								<div class="form-group file-upload" style="display: none;">
-									<input type="file" name="file">
-								</div>
-
-								<div class="form-group"> 
-									<label for="" class="control-label"></label>
-									<center>><button type="submit" class="btn btn-primary btn-flat" >Submit</button></center>
-								</div>  								
-								
-							</form>	
-			            </div>
-			        </div>
-			    </div>
-			</div>
-	</section>
 
 </div>
 
@@ -282,13 +303,20 @@
 				</div>
 		</div>
 </footer>
-</body>
-</html>
 
 
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/jquery.kwicks.min.js" ></script>-->
+<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
+<script src="js/jquery.textillate.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.lettering.js"></script> 
 
+<script src="js/script.js"></script>
 
 <script>
+
 $().ready(function() {
   /*  $('.kwicks').kwicks({
         maxSize : 250,
@@ -316,4 +344,11 @@ $().ready(function() {
     $('.tlt').textillate();
 });
 </script>
+
+
+</body>
+</html>
+
+
+
 
