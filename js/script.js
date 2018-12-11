@@ -37,7 +37,7 @@ $(function(){
 	});
 
     $('#learnMore').click(function () {
-       $('html, body').animate({scrollTop: $('.main-body').offset().top}, 1000); 
+       $('html, body').animate({scrollTop: $('.main-body').offset().top = 730}, 1000); 
     });
 
 
@@ -84,14 +84,14 @@ $(function(){
     });	
 
 
-    $('#it_professional').click(function(){
+    /*$('#it_professional').click(function(){
     	$('.it_professional-person').toggle();
     });
 
 
     $('#non-it_professional').click(function(){
     	$('.non-it_professional-person').toggle();
-    })
+    })*/
 
 
     //different page

@@ -83,8 +83,8 @@ header .navbar{
 }
 
 header .navbar-default {
- /* background-color: transparent;*/
-  background: rgba(22,19,180,.6);
+  background-color: transparent;
+ /* background: rgba(22,19,180,.6);*/
   border: none;
 }
 
@@ -170,6 +170,13 @@ header .video-section{
 	padding-bottom: 0px
 }
 
+
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color:  rgba(22,19,180,.6);
+  }
+}
 
 
 
@@ -302,6 +309,9 @@ header .video-section{
 
 }
 
+
+
+
 @media only screen and (max-width: 990px) {
 	body{
 		
@@ -368,12 +378,24 @@ section.mission-vision{
 	margin-bottom: 30px;
 
 }
+
+.content-mission-vision{
+	background: #ffffff;
+
+}
+
 section.why-hunters-hub{
 	color: black;
 	/*background-image: linear-gradient(to bottom, #12326b, #F3F4F8);*/
 	/*width: 100%*/
-	background: #CFD8DC;
+	/*background: #CFD8DC;*/
+	background: #ffffff;
 	padding-top: 25px;
+}
+
+.three-pillars{
+	background: #CFD8DC;
+	margin-top: 10px
 }
 
 .features{
@@ -471,3 +493,8 @@ footer ul li a.media-links{
 
 
 
+/*.team-image{
+	width: 100%;
+	max-width: 100%;
+	margin: 0px!important;
+}*/
