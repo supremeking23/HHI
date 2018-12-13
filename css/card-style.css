@@ -32,6 +32,12 @@
     color: #ffffff
 }
 
+.card-people small {
+    color: #ffffff
+}
+
+
+
 
 
 @media (max-width: 990px) {
@@ -50,5 +56,6 @@
     .card-people{
     
     margin-right: 0px; 
+    margin-bottom: 10px
 }
 }

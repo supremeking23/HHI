@@ -280,6 +280,18 @@ and (max-width: 768px) {
   display: none;
 }
 
+.icon-bars {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99;
+  display: none;
+}
+
+
+
 
 .icon-bars a {
   display: block;
@@ -292,6 +304,34 @@ and (max-width: 768px) {
 
 
 .icon-bars a:hover {
+  background-color: #000;
+}
+
+
+.icon-bars-two {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99;
+  display: none;
+}
+
+
+
+
+.icon-bars-two a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+
+.icon-bars-two a:hover {
   background-color: #000;
 }
 

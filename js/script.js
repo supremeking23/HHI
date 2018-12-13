@@ -95,7 +95,7 @@ $(function(){
 
 
     //different page
-    $('.people-skill-section').waypoint(function(direction) {
+    /*$('.people-skill-section').waypoint(function(direction) {
         if (direction == "down") {
             //$('nav').addClass('sticky');
              $('#btnbacktoTopTwo').fadeIn();
@@ -109,20 +109,26 @@ $(function(){
         }
     }, {
       offset: '60px;'
-    });
+    });*/
 
-    $('.people-skill-section').waypoint(function(direction) {
+    $('.mission-vision').waypoint(function(direction) {
       //$('.first-row-skills').addClass('animated bounceInUp');
      
 	      //alert(1);
 	     if (direction == "down") {
             //$('nav').addClass('sticky');
-             $('.sidenav').fadeIn();
+             //$('.sidenav').fadeIn();
+ 			 $('#btnbacktoTopTwo').fadeIn();
+             $('.icon-bars-two').fadeIn();
+             $('header nav').addClass('inbody');
               
         } else {
            // $('nav').removeClass('sticky');
           	 
-           $('.sidenav').fadeOut();
+           //$('.sidenav').fadeOut();
+		   $('#btnbacktoTopTwo').fadeOut();
+           $('.icon-bars-two').fadeOut();
+           $('header nav').removeClass('inbody');
         }
 	}, {
 	      offset: '50%'

@@ -16,12 +16,15 @@
 
      <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/>
      <link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+
+     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" type="text/css" href="css/owl.theme.green.css">
+     <link rel="stylesheet" type="text/css" href="css/owl.theme.green.min.css">
   
 
   <style type="text/css">
-
-
-
 
     .form-client{
         background: 
@@ -33,75 +36,42 @@
       background: #1a2455;
     }   
 
+  .parallax-about{
+      /* The image used */
+      background-image: url("img/about_us.jpg");
+      width: 100%;
+      /* Set a specific height */
+      min-height: 500px; 
 
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 
+  .about-us{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #CFD8DC;
+  }
 
-.sidenav {
-    width: 130px;
-    position: fixed;
-    z-index: 1;
-    top: 400px;
-    left: 10px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 8px 0;
-    display: none;
-}
+  .people-skill-section{
+    background: #ffffff;
+  }
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2196F3;
-    display: block;
-}
+  .partners{
+    background: #eceff0 ;
+  }
 
-.sidenav a:hover {
-    color: #064579;
-}
+  .our-team{
+    /*#eceff0 !important*/
+    /*background:#ffffff;*/
+    background: transparent;
+  }
 
-
-
-.parallax-about{
-    /* The image used */
-    background-image: url("img/about_us.jpg");
-    width: 100%;
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-.about-us{
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: #CFD8DC;
-}
-
-.people-skill-section{
-  background: #ffffff;
-}
-
-
-.partners{
-  background: #eceff0 ;
-}
-
-.our-team{
-  /*#eceff0 !important*/
-  /*background:#ffffff;*/
-  background: transparent;
-}
 
   </style>
-
-
 
 
 
@@ -110,7 +80,7 @@
 
 
 <button  id="btnbacktoTopTwo" title="Go to top" data-tooltip="tooltip"><i class="fa fa-arrow-up"></i></button>
-<div class="icon-bars">
+<div class="icon-bars-two">
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
   <a href="#" class="google"><i class="fa fa-google"></i></a> 
@@ -750,11 +720,43 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item">
+                <center>
+                <a href=""><img src="img/wsi.png" class="img img-responsive partners-image" style="width: 300px; height: 100px"></a><br><br>
+                <h4>WeSupport Incorporated</h4>
+                </center>
+              </div>
 
-          <img src="img/partners3.png" class="img img-responsive partners-image" style="margin-bottom: 30px">
+              <div class="owl-item">
+                <center>
+                <a href=""><img src="img/tranzend.png" class="img img-responsive partners-image" style="width: 300px; height: 100px"></a><br><br>
+                <h4>Tranzend Solutions</h4>
+                </center>
+              </div>
+
+              <div class="owl-item">
+                <center>
+                <a href=""><img src="img/provisor.png" class="img img-responsive partners-image" style="width: 300px; height: 100px"></a><br><br>
+                <h4>Provisor Solutions Incorporated</h4>
+                </center>
+              </div>
+
+              <div class="owl-item">
+                <center>
+                <a href=""><img src="img/ekkremis.png" class="img img-responsive partners-image" style="width: 300px; height: 100px"></a><br><br>
+                <h4>Ekkremis Solutions Incorporated</h4>
+                </center>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
+
+
   </div>
 </section>
 
@@ -925,10 +927,11 @@
   <script src="js/jquery.fittext.js"></script>
   <script src="js/jquery.lettering.js"></script> 
   <script src="js/jquery.waypoints.min.js"></script>
-
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script src="js/jquery.sliderPro.min.js"></script>
+ 
 
 <script type="text/javascript">
   $( document ).ready(function( $ ) {
@@ -951,32 +954,17 @@
       }
     });
   });
-</script>
 
-<script type="text/javascript">
-  $( document ).ready(function( $ ) {
-    $( '#example5' ).sliderPro({
-      width: 670,
-      height: 500,
-      orientation: 'vertical',
-      loop: true,
-      arrows: true,
-      buttons: false,
-      thumbnailsPosition: 'right',
-      thumbnailPointer: true,
-      thumbnailWidth: 290,
-      breakpoints: {
-        800: {
-          thumbnailsPosition: 'bottom',
-          thumbnailWidth: 270,
-          thumbnailHeight: 100
-        },
-        500: {
-          thumbnailsPosition: 'bottom',
-          thumbnailWidth: 120,
-          thumbnailHeight: 50
-        }
-      }
-    });
+  $(document).ready(function($){
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true
+      });
   });
 </script>
+
