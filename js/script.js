@@ -37,7 +37,7 @@ $(function(){
 	});
 
     $('#learnMore').click(function () {
-       $('html, body').animate({scrollTop: $('.main-body').offset().top = 730}, 1000); 
+       $('html, body').animate({scrollTop: $('.main-body').offset().top = 690}, 1000); 
     });
 
 
@@ -80,7 +80,7 @@ $(function(){
 
         }
     }, {
-      offset: '60px;'
+      offset: '100px;'
     });	
 
 
@@ -182,7 +182,7 @@ $(function(){
 
 	$('.content-mission-vision').waypoint(function(direction) {
 	    $('.content-mission-vision').addClass('animated fadeIn');
-	    $('.site-logo').addClass('animated fadeInUp');
+	    /*$('.site-logo').addClass('animated fadeInUp');*/
 	    
 	}, {
 	    offset: '50%'
@@ -199,8 +199,8 @@ $(function(){
 	
 
 
-	$('.features').waypoint(function(direction) {
-	    $('.features').addClass('animated fadeIn');
+	$('.core-values-row').waypoint(function(direction) {
+	    $('.core-values-row').addClass('animated fadeIn');
 	   
 	    
 	}, {
@@ -208,7 +208,13 @@ $(function(){
 	});
 
 
-
+	$('.features').waypoint(function(direction) {
+	    $('.features').addClass('animated fadeIn');
+	   
+	    
+	}, {
+	    offset: '50%'
+	});
 
 
 	$('.partners').waypoint(function(direction) {

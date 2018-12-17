@@ -28,7 +28,7 @@ body,html{
 
 
 body{
-	font-size: 17px;
+	font-size: 16px;
 	font-family:"Nunito", sans-serif;
 	background: url('../img/pattern.png');
 }
@@ -170,13 +170,13 @@ header .video-section{
 	padding-bottom: 0px
 }
 
-
+/*
 @media only screen
 and (max-width: 768px) {
   header .navbar-collapse.in {
     background-color:  rgba(22,19,180,.6);
   }
-}
+}*/
 
 
 
@@ -186,7 +186,9 @@ and (max-width: 768px) {
 
 }
 
-
+.photo{
+	padding-bottom: 10px
+}
 
 
 
@@ -358,10 +360,10 @@ and (max-width: 768px) {
 	}
 
 
-	.typing-section{
+	/*.typing-section{
 		display: block;
 
-	}	
+	}*/	
 
 	#buttonKnowmore{
 		background: ;
@@ -376,21 +378,56 @@ and (max-width: 768px) {
 		padding-top: 15px
 	}
 
-	.video-section{
+	/*.video-section{
+		display: none;
+	}*/
+
+	.content{
 		display: none;
 	}
-
 
 }
 
 
+.content-small-screen{
+	background:  #CFD8DC;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	top: -20px;
+	margin-bottom: -20px;
+	display: none;
+}
+
+
+.slider-banner-section{
+	display: block;
+}
+
+.separate-slide{
+	display: none
+}
 
 @media only screen and (max-width: 767px) {
-		#buttonKnowmore{
+	#buttonKnowmore{
 		position: relative;
 		left:40px;
 		margin-left: 50px
 
+	}
+
+
+	.content-small-screen{
+		display: block;
+	}
+
+	.slider-banner-section{
+		display: none;
+	}
+
+	.separate-slide{
+		display: block;
+		/*background: #444*/
 	}
 }
 
@@ -416,11 +453,14 @@ and (max-width: 768px) {
 
 section.mission-vision{
 	margin-bottom: 30px;
-
+	background:#e3e0d1 ;
+	padding-top: 30px;
+	padding-bottom: 30px
 }
 
 .content-mission-vision{
 	background: #ffffff;
+	padding: 15px 10px 15px 25px 
 
 }
 
@@ -428,7 +468,7 @@ section.why-hunters-hub{
 	color: black;
 	/*background-image: linear-gradient(to bottom, #12326b, #F3F4F8);*/
 	/*width: 100%*/
-	/*background: #CFD8DC;*/
+	/*background: #CFD8DC; #ffffff*/
 	background: #ffffff;
 	padding-top: 25px;
 }
@@ -441,6 +481,10 @@ section.why-hunters-hub{
 .features{
 	 margin-bottom: 50px;
 
+}
+
+.core-values-row{
+	margin-bottom: 20px;
 }
 
 
@@ -457,6 +501,17 @@ section.core-values{
 	color: black;
 	background:;
 	/*margin-bottom: 50px;*/
+}
+
+
+section.services{
+	color: black;
+	background:;
+	/*margin-bottom: 50px;*/
+}
+
+.services-row{
+	margin-bottom: 20px;
 }
 
 

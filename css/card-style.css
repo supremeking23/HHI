@@ -1,7 +1,7 @@
 .card {
     box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
     transition: 0.3s;
-    background: ;
+    background: #ffffff;
 
     
 }
@@ -15,13 +15,47 @@
 }
 
 
-.mission-container{
+/*.mission-container{
     box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
     transition: 0.3s;
     background: ;
+}*/
+
+.card-values{
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: #ffffff;
+    padding: 10px;
+    
 }
 
 
+ .card-values:hover  {
+    /*box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);*/
+    /*background-image: linear-gradient(to top, #12326b, #F3F4F8);*/
+    background: #12326b;
+    color: white
+
+}
+
+
+
+.card-services{
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: #ffffff;
+    padding: 10px;
+    
+}
+
+
+ .card-services:hover  {
+    /*box-shadow: 0 8px 16px 0 rgba(108,196,115,1.2);*/
+    /*background-image: linear-gradient(to top, #12326b, #F3F4F8);*/
+    background: #12326b;
+    color: white
+
+}
 
 
 .card-people{
@@ -34,6 +68,56 @@
 
 .card-people small {
     color: #ffffff
+}
+
+
+
+
+.people-skill-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 2em
+    /*width: 40%;*/
+}
+
+.people-skill-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #12326b;
+    color: white
+}
+
+.container-people-skill-card {
+    padding: 12px 0px 15px 0px;
+}
+
+
+
+
+.card-team {
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    transition: 0.3s;
+    width:100%;
+    border-radius: 5px;
+    /*background: #607D8B;
+    color: #ffffff;*/
+
+}
+
+
+.card-team small {
+    /*color: #ffffff*/
+}
+
+.card-team:hover {
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+}
+
+.card-team img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container-team {
+    padding: 2px 16px;
 }
 
 
