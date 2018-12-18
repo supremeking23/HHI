@@ -175,7 +175,18 @@
             <h2 style="font-weight: bold">Company Mission</h2>
             <br />
            <h4>Our mission is:</h4>
-            <ul>
+           <style type="text/css">
+             ul.mission-list{
+                list-style: none;
+                margin-top: 10px
+             }
+
+             ul.mission-list li:before {
+               content: '✓ ';
+               font-weight: bold;
+             }
+           </style>
+            <ul class="mission-list">
               <li>To connect the right jobs to qualified candidates to close the gab between the jobseeker and employee</li>
               <li>Build a long term relationship with clients and maintain a productive workplace</li>
               <li>Support and promote the Philippine business community</li>
@@ -203,7 +214,7 @@
       </div>
   </section>
 
-  <section class="core-values" style="">
+  <section class="core-values" style="">  <!-- may problema pag nag small screen-->
     <div class="container">
       <div class="row">
           <br>
@@ -214,38 +225,33 @@
       </div>
 
       <div class="row core-values-row">
-
-
         <div class="card-values col-lg-12" style="">
           <div class="row">
             <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-0">
                <img src="img/briefcase.png" class="image img-responsive" width="150px">
             </div><!-- photo -->
             <div class=" col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-10" >
-             
+
               <h3 style="margin-bottom: 10px">Professionalism and Integrity</h3>
               <p>We understand the importance of business integrity and professionalism that is why HHI holds these up to standard because the clients and stakeholders that interact with our company are positively impacted by them. Our clients can be sure to rely on our high- standard implementation of these core values in our business dealings because we ultimately do what we say we’ll do.</p>
             
             </div>
           </div> 
         </div> 
-
-
       </div>
 
       <div class="row core-values-row">
-              <div class="card-values col-lg-12" style="">
-                <div class="row">
-                  <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-0">
-                     <img src="img/effort.png" class="image img-responsive" width="150px">
-                  </div><!-- photo -->
-                  <div class=" col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-10">
-                    <h3 style="margin-bottom: 10px">Commitment to our Clients</h3>
-                    <p>We are a hundred percent committed to going above and beyond to measure up to our client expectations. HHI always aims to properly identify and understand our clients’ needs, and effectively take action in being able to provide the quality of service that looks only for the best and provides only the best.</p>
-                  </div>
-                </div> 
-              </div> 
-
+          <div class="card-values col-lg-12" style="">
+            <div class="row">
+              <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-0">
+                 <img src="img/effort.png" class="image img-responsive" width="150px">
+              </div><!-- photo -->
+              <div class=" col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-10">
+                <h3 style="margin-bottom: 10px">Commitment to our Clients</h3>
+                <p>We are a hundred percent committed to going above and beyond to measure up to our client expectations. HHI always aims to properly identify and understand our clients’ needs, and effectively take action in being able to provide the quality of service that looks only for the best and provides only the best.</p>
+              </div>
+            </div> 
+          </div> 
       </div>
 
 
@@ -264,9 +270,6 @@
       </div>
 
       <div class="row core-values-row ">
-
-
-
         <div class="card-values col-lg-12" style="">
           <div class="row">
             <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-0">
@@ -278,24 +281,12 @@
             </div>
           </div> 
         </div> 
-
-
       </div>
 
 
 
     </div>
   </section>
-
-  <!-- core-values -->
-
-  <!--<div class="sidenav">
-      
-      <button  id="it_professional" class="btn btn-primary btn-sm btn-flat btn-block">IT Professionals</button>
-      
-      <button id="non-it_professional" class="btn btn-success btn-sm btn-flat btn-block">non-IT Professionals</button> 
-  </div>  -->
-
 
 <section class="people-skill-section" style="padding-bottom: 20px">
   <div class="container">
@@ -310,7 +301,7 @@
       <div class="row">
           <div class="col-md-4">
             <div class="people-skill-card">
-              <img src="img/application-programmers.jpg" alt="Avatar" style="width:100%">
+              <img src="img/call-center-unsplash.jpg" alt="Avatar" style="width:100%">
               <div class="container-people-skill-card">
                 <h4 class="text-center"><b>BPO Personnel</b></h4> 
                 
@@ -363,7 +354,7 @@
 
           <div class="col-md-4">
             <div class="people-skill-card">
-              <img src="img/application-programmers.jpg" alt="Avatar" style="width:100%">
+              <img src="img/media.jpg" alt="Avatar" style="width:100%">
               <div class="container-people-skill-card">
                 <h4 class="text-center"><b>Entertainment and Media Personnel</b></h4> 
                  
@@ -389,7 +380,7 @@
             <div class="people-skill-card">
               <img src="img/food.jpg" alt="Avatar" style="width:100%">
               <div class="container-people-skill-card">
-                <h4 class="text-center"><b>Food Corporation Employees</b></h4> 
+                <h4 class="text-center"><b>Food Industry Personnel</b></h4> 
                  
               </div>
             </div>
@@ -399,7 +390,7 @@
             <div class="people-skill-card">
               <img src="img/medical.jpg" alt="Avatar" style="width:100%">
               <div class="container-people-skill-card">
-                <h4 class="text-center"><b>Hospital Personnel</b></h4> 
+                <h4 class="text-center"><b>Medical Personnel</b></h4> 
                  
               </div>
             </div>
