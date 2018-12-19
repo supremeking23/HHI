@@ -227,7 +227,7 @@ $(function(){
 
 
 
-	$('.our-team').waypoint(function(direction) {
+	$('.team-image').waypoint(function(direction) {
 	    $('.team-image').addClass('animated fadeInLeft');
 	   
 	    
@@ -236,6 +236,13 @@ $(function(){
 	});
 
 
+	$('.skill-image').waypoint(function(direction) {
+	    $('.skill-image').addClass('animated fadeInLeft');
+	   
+	    
+	}, {
+	    offset: '50%'
+	});
   /*  $('.first-row-skills').waypoint(function(direction) {
       $('.first-row-skills').addClass('animated bounceInUp');
      

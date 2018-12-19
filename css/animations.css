@@ -6,7 +6,8 @@
 .partners-image,
 .team-image,
 .w-h-h-text,
-.core-values-row
+.core-values-row,
+.skill-image
 {
     opacity: 0;
     -webkit-animation-duration: 1s;
@@ -26,6 +27,7 @@
 .team-image.animated,
 .w-h-h-text .animated
 .core-values-row .animated,
+.skill-image .animated
  {
     opacity: 1;
 }
