@@ -5,6 +5,9 @@
 	 <link rel="shortcut icon" href="img/logo.jpg" />
 	 <meta charset="UTF-8">
   	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="Hunter's Hub Incorporated">
+     <meta name="keywords" content="Recruitment, Headhunting">
+     <meta name="author" content="Ivan Christian Jay Funcion, Dominic Nanz Saronitman, Lexi Ciron">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,16 +21,7 @@
  
 
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!--<script src="js/jquery.kwicks.min.js" ></script>-->
-	<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
-	<script src="js/jquery.textillate.js"></script>
-	<script src="js/jquery.fittext.js"></script>
-	<script src="js/jquery.lettering.js"></script> 
 
-	<script src="js/script.js"></script>
-	
 
 
 
@@ -48,7 +42,7 @@
 
 	.parallax-jobseeker-image{
 	    /* The image used */
-	    background-image: url("img/jobseeker_image.png");
+	    background-image: url("img/jobseeker-bg.jpg");
 	    width: 100%;
 	    /* Set a specific height */
 	    min-height: 500px; 
@@ -66,6 +60,31 @@
 	  padding-bottom: 25px;
 	  background: #CFD8DC;
 	}
+
+
+  .bottom-left {
+    position: absolute;
+    bottom: 268px;
+    left: -116px;
+    /*background-color: rgba(255,255,255,0.5);*/
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 530px
+}
+
+
+
+
+@media only screen
+and (max-width: 768px) {
+  .bottom-left{
+    color: ;
+    position: absolute;
+      bottom: 268px;
+      left: -150px;
+  }
+}
 
 	</style>
 
@@ -87,7 +106,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img class="img-brand" src="img/HHI Logo edit2.png" style="width:250px" ></a>
+        <a class="navbar-brand" href="index.html"><img class="img-brand" alt="HHI" src="img/HHI Logo edit2.png" style="width:250px" ></a>
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right" style="color: white">
@@ -124,10 +143,12 @@
 
 <div class="main-body">
 		  	<div class="parallax-jobseeker-image">
-
+          <div class="bottom-left">
+            <h3 style="font-weight: bold" class="text-center">For Jobseeker</h3>
+          </div>            
   			</div>
 
-		  <section class="for-jobseeker-text">
+		<!--  <section class="for-jobseeker-text">
 		    <div class="container">
 		      <div class="row">
 		        <div class="col-md-12">
@@ -138,9 +159,9 @@
 
 		      </div>
 		    </div>
-		  </section>
+		  </section> -->
 
-			<section class="form-jobseeker" style="padding-bottom: 15px;margin-top: 10px">
+			<section class="form-jobseeker" style="padding-bottom: 15px;margin-top: 10px;padding-top: 15px">
 					<div class="container">
 					    <div class="row" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8); padding-top: 15px">
 					        <div class="col-md-12">
@@ -284,6 +305,16 @@
 </html>
 
 
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/jquery.kwicks.min.js" ></script>-->
+<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
+<script src="js/jquery.textillate.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.lettering.js"></script> 
+
+<script src="js/script.js"></script>
+  
 
 
 <script>
