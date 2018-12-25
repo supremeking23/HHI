@@ -1,33 +1,8 @@
 $(function(){
 
-		/*$('.content-mission-vision').css('display','none');
-	    $('.site-logo').css('display','none');*/
-	    
 
-	//
-	
-
-
-	// When the user scrolls down 20px from the top of the document, show the button
-	/*window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-	       
-	        $('#btnbacktoTop').fadeIn();
-	    } else {
-	       \
-	       
-	        $('#btnbacktoTop').fadeOut();
-	    }
-	}*/
-
-	// When the user clicks on the button, scroll to the top of the document
-	/*function topFunction() {
-	    document.body.scrollTop = 0;
-	    document.documentElement.scrollTop = 0;
-	}*/
-
+	//index banner
+	//$(".text-one").addClass('animated fadeInLeft');
 	// scroll body to 0px on click
 	$('#btnbacktoTop').click(function () {
 		$('body,html').animate({
@@ -58,9 +33,9 @@ $(function(){
 	/* Animations on scroll */
 
 
-	$('.tlt').textillate();
+	
 
-    $('.main-body').waypoint(function(direction) {
+    $('.three-pillars').waypoint(function(direction) {
         if (direction == "down") {
             //$('nav').addClass('sticky');
              $('#btnbacktoTop').fadeIn();
@@ -145,40 +120,7 @@ $(function(){
 
 
 
-    $('.people-skill-section-row-1').waypoint(function(direction) {
-      //$('.first-row-skills').addClass('animated bounceInUp');
-     
-      	$('.people-skill-section-row-2').addClass('animated fadeInRight');
-	}, {
-	      offset: '50%'
-	});
 
-
-    $('.people-skill-section-row-2').waypoint(function(direction) {
-      //$('.first-row-skills').addClass('animated bounceInUp');
-     
-      	$('.people-skill-section-row-3').addClass('animated fadeInLeft');
-	}, {
-	      offset: '50%'
-	});
-
-
-    $('.people-skill-section-row-3').waypoint(function(direction) {
-      //$('.first-row-skills').addClass('animated bounceInUp');
-     
-      	$('.people-skill-section-row-4').addClass('animated fadeInRight');
-	}, {
-	      offset: '50%'
-	});
-
-
-    $('.people-skill-section-row-5').waypoint(function(direction) {
-      //$('.first-row-skills').addClass('animated bounceInUp');
-     
-      	$('.people-skill-section-row-5').addClass('animated fadeInLeft');
-	}, {
-	      offset: '50%'
-	});
 
 	$('.content-mission-vision').waypoint(function(direction) {
 	    $('.content-mission-vision').addClass('animated fadeIn');
@@ -236,13 +178,15 @@ $(function(){
 	});
 
 
-	$('.skill-image').waypoint(function(direction) {
+	/*$('.skill-image-row-one').waypoint(function(direction) {
 	    $('.skill-image').addClass('animated fadeInLeft');
 	   
 	    
 	}, {
 	    offset: '50%'
-	});
+	});*/
+
+
   /*  $('.first-row-skills').waypoint(function(direction) {
       $('.first-row-skills').addClass('animated bounceInUp');
      

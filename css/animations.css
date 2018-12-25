@@ -2,12 +2,10 @@
 .site-logo,
 .features,
 .skills,
-.people-skill-sections,
 .partners-image,
 .team-image,
 .w-h-h-text,
-.core-values-row,
-.skill-image
+.core-values-row
 {
     opacity: 0;
     -webkit-animation-duration: 1s;
@@ -22,12 +20,10 @@
 .content-mission-vision.animated,
 .site-logo.animated,
 .features.animated,
-.people-skill-sections.animated,
 .partners-image.animated,
 .team-image.animated,
 .w-h-h-text .animated
-.core-values-row .animated,
-.skill-image .animated
- {
+.core-values-row .animated
+{
     opacity: 1;
 }

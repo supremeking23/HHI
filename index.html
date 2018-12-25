@@ -5,8 +5,6 @@
 	 <link rel="shortcut icon" href="img/logo.jpg" />
 	 <meta charset="UTF-8">
   	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
 	 <meta name="description" content="Hunter's Hub Incorporated">
 	 <meta name="keywords" content="Recruitment, Headhunting">
 	 <meta name="author" content="Ivan Christian Jay Funcion, Dominic Nanz Saronitman, Lexi Ciron">
@@ -18,45 +16,17 @@
      <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
 
-     <link rel="stylesheet" href="css/jquery.kwicks.min.css"> 
-
-     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
-  
+     
+	 <style type="text/css">
 
 
-
-	<style type="text/css">
-
-
-		.content {
-		    position: absolute;
-		    bottom: 190px;
-		   /* background: rgba(0, 0, 0, 0.5);*/
-		    color: #f1f1f1;
-		    width: 100%;
-		    padding: 20px;
-		}
+	    header .navbar-default {
+	      /*background: rgba(104,73,49,.9);*/
+	      background: #1a2455;
+	    } 
 
 
-		.content-typing {
-		   /* position: absolute;
-		    bottom: 330px;
-		    /*background: rgba(0, 0, 0, 0.5);
-		    color: #f1f1f1;
-		    width: 100%;
-		    padding: 20px;
-		    font-size: 15px;*/
-		}
-
-		.content-text-typing{
-			width: 100%;
-			padding-top: 250px
-		}
-
-
-		.content-text{
-			width: 40%;
-		}
+		/*banner for clients and jobseeker*/
 
 		.banner-container {
 		  overflow: hidden;
@@ -109,15 +79,125 @@
 			color: white
 		}
 
+	   .parallax-one{
+	      /* The image used */
+	      background-image: url("img/HR assistant.jpg");
+	      width: 100%;
+	      /* Set a specific height */
+	      min-height: 500px; 
+
+	      /* Create the parallax scrolling effect */
+	      background-attachment: fixed;
+	      background-position: center;
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	   }
 
 
+	   .parallax-two{
+	      /* The image used */
+	      background-image: url("img/bg.png");
+	      width: 100%;
+	      /* Set a specific height */
+	      min-height: 500px; 
+
+	      /* Create the parallax scrolling effect */
+	      background-attachment: fixed;
+	      background-position: center;
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	   }	   
 
 
+	   .parallax-three{
+	      /* The image used */
+	      background-image: url("img/jobseeker-parallax -bg.jpg");
+	      width: 100%;
+	      /* Set a specific height */
+	      min-height: 500px; 
+
+	      /* Create the parallax scrolling effect */
+	      background-attachment: fixed;
+	      background-position: center;
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	   }
+
+  	   .middle-right-one {
+		    position: absolute;
+		    bottom: 268px;
+		    right: -15px;
+		    /*background-color: rgba(255,255,255,0.5);*/
+		    color: #ffffff;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    width: 530px
+		}
 
 
+  	   .middle-right-two {
+		    position: absolute;
+		    bottom: 268px;
+		    right: -15px;
+		    /*background-color: rgba(255,255,255,0.5);*/
+		    color: #ffffff;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    width: 530px
+		}
 
-	</style>
 
+  	   .middle-right-three {
+		    position: absolute;
+		    bottom: 208px;
+		    right: -15px;
+		    /*background-color: rgba(255,255,255,0.5);*/
+		    color: #ffffff;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    width: 530px
+		}
+
+
+@media only screen
+and (max-width: 768px) {
+  .middle-right-one{
+    	color: ;
+    	position: absolute;
+      	bottom: 50px;
+      	right: -70px;
+  }
+
+  .middle-right-two{
+    	color: ;
+    	position: absolute;
+      	bottom: 50px;
+      	right: -70px;
+  }
+
+  .middle-right-three {
+	    position: absolute;
+	    bottom: 50px;
+	    right: -70px;
+	    /*background-color: rgba(255,255,255,0.5);*/
+	    color: #ffffff;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    width: 530px
+	}
+
+}
+
+
+	 </style>
+
+<meta name="google-signin-client_id" content="855851537283-srrsdqn5t4eid0s0j5vm25ldqfqslgt4.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+	gapi.load('auth2',function(){
+		gapi.auth2.init();
+	})
+</script>
 </head>
 <body>
 
@@ -163,80 +243,15 @@
  </nav>		
 
 
-	<section class="video-section">
-		<video autoplay muted loop width="100%" height="" poster="img/comp.jpg" style="margin-bottom: 0px!important" class="">
-			<!--<source src="movie1.mp4"  > -->
-			<source src="movie3.mov">
-		</video>
-
-		<div class="content">
-			<div class="content-text">
-			  <h1 class="tlt" style="font-weight: bold;">Hunter's Hub Incorporated</h1>
-			  <br />
-			  <p class="tlt" style="font-size: 18px">Your company of choice, for Headhunting & Sourcing Services in all industries
-			  </p>
-			  
-			</div>
-
-			<button type="button" class="btn btn-default btn-flat btn-lg" style="position: relative;" id="learnMore">Learn More</button>
-		</div>
-	</section>
-
-
-	<section class="typing-section" style="background: ">
-		
-		
-
-		<div class="content-typing">
-			<div class="content-text-typing">
-			  <h1 class="" style="font-weight: bold;">Hunter's Hub Incorporated</h1>
-			  <p class="tlt" style="font-size: 18px">Your company of choice, for Headhunting & Sourcing Services in all industries
-			 </p>
-			</div>
-		</div>
-	</section>
-
-
-
-	<!--	<div id="wrapper">
-			<div id="slider">
-	
-				<div class="slide" style="background-image: url(img/handshake-image-1.jpg);">
-					<div class="slide-block">
-						<h4>Hunter's Hub Incorporated</h4>
-						<p>Heading south to avoid a bad case of global frostbite, a group of migrating misfit creatures embark on a hilarious quest to reunite a human baby with his tribe.</p>
-					</div>
-				</div>
-		
-				<div class="slide" style="background-image: url(img/birds.jpg);">
-					<div class="slide-block">
-						<h4>For The Birds</h4>
-						<p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
-					</div>
-				</div>
-		
-				<div class="slide" style="background-image: url(img/up.jpg);">
-					<div class="slide-block">
-						<h4>UP</h4>
-						<p>A comedy adventure in which 78-year-old Carl Fredricksen fulfills his dream of a great adventure when he ties thousands of balloons to his house and flies away to the wilds of South America.</p>
-					</div>
-				</div>
-		
-			</div>
-		</div> -->
 
 </header>
 
 
 
 
+<div class="main-body">
 
-  <!--carousel area -->
-
-
-<div class="main-body" >
-
-	<section class="content-small-screen">
+<!--	<section class="content-small-screen">
 		    <div class="container">
 		      <div class="row">
 		        <div class="col-md-12">
@@ -249,7 +264,53 @@
 
 		      </div>
 		    </div>
-    </section>
+    </section> -->
+
+	<div class="container-carousel" style="margin-top: 70px">
+	  
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" style="height: 400px;min-height: 500px">
+	      <div class="item active parallax-one">
+	          <div class="middle-right-one">
+	            <h1 style="font-weight: bold;color: " class="text-center text-uppercase  animated fadeInLeft">Hunter's Hub </h1>
+	            <h3 style="font-weight: bold" class="text-center text-primary animated fadeInDown">Incorporated</h3>
+	          </div> 
+	      </div>
+
+	      <div class="item parallax-two">
+	          <div class="middle-right-two">
+	            
+	            <h3 style="font-weight: bold;" class="text-center animated fadeInUp ">Your company of choice, <br />for Headhunting & Sourcing Services in all industries</h3>
+	          </div> 
+	      </div>
+	    
+	      <div class="item parallax-three">
+	          <div class="middle-right-three">
+	            <h1 style="font-weight: bold;color: " class="text-center text-uppercase  animated fadeInLeft">Work with us</h1>
+	            
+	          </div> 
+	      </div>
+	    </div>
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
 
 	<section class="why-hunters-hub">
 
@@ -269,7 +330,16 @@
 					<div class="col-md-12">
 						
 						<p align="justify">The world is moving so fast; it’s sometimes easy to lose sight of the things that truly matter. That’s why at Hunter's Hub we created "The Hunter’s hub way – a strong set of company values that drives everything we do." Everything we do comes back to our values. They are real. They are important.</p>
-							        
+						<div class="g-signin2" data-onsuccess="onSignIn"></div>
+						<script>
+							function onSignIn(googleUser) {
+							  var profile = googleUser.getBasicProfile();
+							  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+							  console.log('Name: ' + profile.getName());
+							  console.log('Image URL: ' + profile.getImageUrl());
+							  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+							}
+						</script>
 			           <style type="text/css">
 			             ul.mission-list{
 			                list-style: none;
