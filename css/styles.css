@@ -162,9 +162,6 @@ header .navbar-default .navbar-nav .active a {
 }
 
 
-header .video-section{
-	
-}
 
 .site-logo{
 	padding-bottom: 0px
@@ -177,7 +174,6 @@ and (max-width: 768px) {
     background-color:  rgba(22,19,180,.6);
   }
 }*/
-
 
 
 
@@ -282,7 +278,8 @@ and (max-width: 768px) {
   display: none;
 }
 
-.icon-bars {
+
+/*.icon-bars {
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -290,7 +287,8 @@ and (max-width: 768px) {
   transform: translateY(-50%);
   z-index: 99;
   display: none;
-}
+}*/
+
 
 
 
@@ -578,6 +576,12 @@ footer ul li a.media-links{
 	  background: #bb0000;  /*3B5998*/
       color: white;
        padding: 10px 12px ;
+}
+
+.arrow-indicator{
+	  background: #bb0000;  /*3B5998*/
+      color: white;
+      padding: 10px 12px ;
 }
 
 .linkedin{

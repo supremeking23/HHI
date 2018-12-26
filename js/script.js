@@ -33,13 +33,35 @@ $(function(){
 	/* Animations on scroll */
 
 
+	$( ".btn-hide-social-media" ).click(function() {
+		var data_arrow = $(this).data("arrow");
+		
+		//alert(data_value);
+		if(data_arrow =="arrow-left"){
+			data_arrow = "arrow-right";
+			$("i").removeClass("fa-arrow-left");
+			$("i").addClass("fa-arrow-right");
+			$('.btn-hide-social-media').data("arrow",data_arrow);
+			
+			//alert(data_value);
+		}else if(data_arrow =="arrow-right"){
+			$("i").removeClass("fa-arrow-right");
+			$("i").addClass("fa-arrow-left");
+			data_arrow = "arrow-left";
+			$('.btn-hide-social-media').data("arrow",data_arrow);
+
+		}
+		//alert(data_value);
+	  $( ".social-media" ).toggle("slide");
+	});
+
 	
 
-    $('.three-pillars').waypoint(function(direction) {
+    $('.why-hunters-hub').waypoint(function(direction) {
         if (direction == "down") {
             //$('nav').addClass('sticky');
              $('#btnbacktoTop').fadeIn();
-             $('.icon-bars').fadeIn();
+             //$('.icon-bars').fadeIn();
               $('header nav').addClass('inbody');
               $('.img-brand').css('width','230px');
               $('.img-brand').attr("src","img/HHI Logo edit2.png");
@@ -48,7 +70,7 @@ $(function(){
            // $('nav').removeClass('sticky');
            $('#btnbacktoTop').fadeOut();
            $('header nav').removeClass('inbody');
-           $('.icon-bars').fadeOut();
+           //$('.icon-bars').fadeOut();
            $('.img-brand').css('width','250px');
            $('.img-brand').attr("src","img/HHI Logo edit2.png");
            
@@ -94,7 +116,8 @@ $(function(){
             //$('nav').addClass('sticky');
              //$('.sidenav').fadeIn();
  			 $('#btnbacktoTopTwo').fadeIn();
-             $('.icon-bars-two').fadeIn();
+             //$('.icon-bars-two').fadeIn();
+             //$('.icon-bars').fadeIn();
              $('header nav').addClass('inbody');
               
         } else {
@@ -102,7 +125,8 @@ $(function(){
           	 
            //$('.sidenav').fadeOut();
 		   $('#btnbacktoTopTwo').fadeOut();
-           $('.icon-bars-two').fadeOut();
+           //$('.icon-bars-two').fadeOut();
+           //$('.icon-bars').fadeOut();
            $('header nav').removeClass('inbody');
         }
 	}, {

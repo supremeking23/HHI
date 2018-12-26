@@ -9,25 +9,12 @@
      <meta name="keywords" content="Recruitment, Headhunting">
      <meta name="author" content="Ivan Christian Jay Funcion, Dominic Nanz Saronitman, Lexi Ciron">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-
      <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
-
-     <!--<link rel="stylesheet" href="css/jquery.kwicks.min.css"> -->
-
-     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
-  
- 
-
-
-
-
-
+     <link rel="stylesheet" href="css/contact-buttons.css">
+     <link rel="stylesheet" href="css/styles.css">
 
 	<style type="text/css">
-
-
 
 
 		.form-jobseeker{
@@ -40,51 +27,51 @@
 		}	
 
 
-	.parallax-jobseeker-image{
-	    /* The image used */
-	    background-image: url("img/jobseeker-bg.jpg");
-	    width: 100%;
-	    /* Set a specific height */
-	    min-height: 500px; 
+  	.parallax-jobseeker-image{
+  	    /* The image used */
+  	    background-image: url("img/jobseeker-bg.jpg");
+  	    width: 100%;
+  	    /* Set a specific height */
+  	    min-height: 500px; 
 
-	    /* Create the parallax scrolling effect */
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	}
-
-
-	.for-jobseeker-text{
-	  padding-top: 25px;
-	  padding-bottom: 25px;
-	  background: #CFD8DC;
-	}
+  	    /* Create the parallax scrolling effect */
+  	    background-attachment: fixed;
+  	    background-position: center;
+  	    background-repeat: no-repeat;
+  	    background-size: cover;
+  	}
 
 
-  .bottom-left {
-    position: absolute;
-    bottom: 268px;
-    left: -116px;
-    /*background-color: rgba(255,255,255,0.5);*/
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 530px
-}
+  	.for-jobseeker-text{
+  	  padding-top: 25px;
+  	  padding-bottom: 25px;
+  	  background: #CFD8DC;
+  	}
 
 
-
-
-@media only screen
-and (max-width: 768px) {
-  .bottom-left{
-    color: ;
-    position: absolute;
+    .bottom-left {
+      position: absolute;
       bottom: 268px;
-      left: -150px;
+      left: -116px;
+      /*background-color: rgba(255,255,255,0.5);*/
+      color: #ffffff;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 530px
+    }
+
+
+
+
+  @media only screen
+  and (max-width: 768px) {
+    .bottom-left{
+      color: ;
+      position: absolute;
+        bottom: 268px;
+        left: -150px;
+    }
   }
-}
 
 	</style>
 
@@ -192,7 +179,7 @@ and (max-width: 768px) {
 
 										<div class="form-group"> 
 											<label for="message" class="control-label">Message</label>
-											<textarea class="form-control" name="inquiries"  rows="10" style="font-weight: bold;"></textarea>
+											<textarea class="form-control" name="inquiries"  rows="10" style="font-weight: bold;resize: none"></textarea>
 										</div>		
 										
 										<div class="form-group"> 
@@ -231,15 +218,15 @@ and (max-width: 768px) {
               
                 <form>
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name" name="" style="border-radius: 15px">
+                    <input type="text" class="form-control" placeholder="Name" name="" style="">
                   </div>
 
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email" name=""  style="border-radius: 15px">
+                    <input type="text" class="form-control" placeholder="Email" name=""  style="">
                   </div>
 
                   <div class="form-group">
-                    <textarea class="form-control" style="width: 100%;border-radius: 15px" rows="10" placeholder="Message" ></textarea>
+                    <textarea class="form-control" style="width: 100%;resize: none" rows="10" placeholder="Message" ></textarea>
                   </div>
                   <div class="form-group">
                     <button type="button" class="btn btn-primary btn-flat pull-left">Submit</button>
@@ -307,11 +294,8 @@ and (max-width: 768px) {
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--<script src="js/jquery.kwicks.min.js" ></script>-->
-<!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>--->
-<script src="js/jquery.textillate.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/jquery.lettering.js"></script> 
+<script src="js/jquery.contact-buttons.js"></script>
+ <script src="js/demo.js"></script>
 
 <script src="js/script.js"></script>
   
@@ -326,7 +310,7 @@ $().ready(function() {
 
     //$('.slider').bxSlider();
 
-    $('.tlt').textillate();
+   
 });
 </script>
 
