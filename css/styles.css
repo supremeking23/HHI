@@ -41,18 +41,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-p{
-	
+ul.list-items{
+	list-style: none;
+    margin-top: 10px
+}
+
+ul.list-items li{
+	 margin-bottom: 10px
+
+}
+
+
+ul.list-items li i{
+	margin-right:	5px;
 }
 
 
 
-/*#myVideo{
-	
-	width: 100%;
-	height:520px;
-	margin-bottom: 0px!important;
-}*/
 
 /*header*/
 header{
@@ -64,10 +69,6 @@ header{
 	/*background: url('../img/rawpixel-679094-unsplash.jpg');*/
 
 }
-
-
-
-
 
 header .navbar{
 	border-radius: 0;
