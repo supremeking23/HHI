@@ -59,6 +59,11 @@
 .contact-button-link.linkedin {
   background: #0077b5;
 }
+
+.contact-button-link.lightbulb-o {
+  background: #99c00d;
+}
+
 .contact-button-link.gplus {
   background: #db4437;
 }

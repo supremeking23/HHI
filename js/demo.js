@@ -17,5 +17,6 @@ $.contactButtons({
   buttons : {
     'facebook':   { class: 'facebook', use: true, link: 'https://www.facebook.com/Hunters-Hub-Incorporated-208732030013230/', extras: 'target="_blank"' },
     'linkedin':   { class: 'linkedin', use: true, link: 'https://www.linkedin.com/company/hunter-s-hub-incorporated/about/', extras: 'target="_blank"'  },
+    'lightbulb-o':   { class: 'lightbulb-o', use: true, link: 'https://www.indeedjobs.com/hunters-hub-inc/_hl/en_PH?cpref=JXWAtnzf3XW5aRnY2g_zonsfzg9-fxtSRiWa1kaGqGU', extras: 'target="_blank"'  },
   }
 });
