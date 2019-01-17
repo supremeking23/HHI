@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hunter's Hub Inc.</title>
+	<title>Clients | Hunter's Hub Inc.</title>
 	 <link rel="shortcut icon" href="img/logo.jpg" />
 	 <meta charset="UTF-8">
   	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="description" content="Hunter's Hub Incorporated">
-	 <meta name="keywords" content="Recruitment, Headhunting">
+	 <meta name="description" content="Clients | Hunter's Hub Incorporated">
+	 <meta name="keywords" content="Recruitment, Headhunting, Clients Portal, Clients,Hunter's Hub Inc">
 	 <meta name="author" content="Ivan Christian Jay Funcion, Dominic Nanz Saronitman, Lexi Ciron">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,8 @@
 
 
 		.form-client{
-			  background: 
+			  background: ;
+			  padding-bottom: 15px;margin-top: 10px;padding-top: 15px;
 		}
 
 
@@ -33,51 +34,51 @@
 
 
 
-	.parallax-client-image{
-	    /* The image used */
-	    background-image: url("img/client-handshake.jpg");
-	    width: 100%;
-	    /* Set a specific height */
-	    min-height: 500px; 
+		.parallax-client-image{
+		    /* The image used */
+		    background-image: url("img/client-handshake.jpg");
+		    width: 100%;
+		    /* Set a specific height */
+		    min-height: 500px; 
 
-	    /* Create the parallax scrolling effect */
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+
+
+		.for-client-text{
+		  padding-top: 25px;
+		  padding-bottom: 25px;
+		  background: #CFD8DC;
+		}
+
+
+	.bottom-left {
+	    position: absolute;
+	    bottom: 268px;
+	    left: -116px;
+	    /*background-color: rgba(255,255,255,0.5);*/
+	    color: #ffffff;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    width: 530px
 	}
 
 
-	.for-client-text{
-	  padding-top: 25px;
-	  padding-bottom: 25px;
-	  background: #CFD8DC;
+
+
+	@media only screen
+	and (max-width: 768px) {
+		.bottom-left{
+			color: ;
+			position: absolute;
+	    	bottom: 268px;
+	    	left: -180px;
+		}
 	}
-
-
-.bottom-left {
-    position: absolute;
-    bottom: 268px;
-    left: -116px;
-    /*background-color: rgba(255,255,255,0.5);*/
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 530px
-}
-
-
-
-
-@media only screen
-and (max-width: 768px) {
-	.bottom-left{
-		color: ;
-		position: absolute;
-    	bottom: 268px;
-    	left: -180px;
-	}
-}
 
 	</style>
 
@@ -144,25 +145,13 @@ and (max-width: 768px) {
 		  		</div>
   			</div>
 
-		<!--  <section class="for-client-text">
-		    <div class="container">
-		      <div class="row">
-		        <div class="col-md-12">
-		          <h3 style="font-weight: bold" class="text-center">For Clients</h3>
-		              <br />
-		                <p align="justify" style=" ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem tortor, fermentum sed consectetur ac, dictum vehicula turpis. In ornare posuere facilisis. Nulla lacus lectus, faucibus id erat sit amet, faucibus tincidunt augue. Curabitur aliquam, sapien a volutpat fringilla, dui nunc dapibus erat, quis ullamcorper enim erat id lectus. Nunc a est consequat, auctor tortor at, hendrerit est. Vivamus sagittis orci eget tristique ultrices. Proin diam sem, efficitur nec elit sit amet, consectetur tempus justo. In dapibus augue et vulputate pellentesque.</p>  
-		        </div>
 
-		      </div>
-		    </div>
-		  </section> -->
-
-		<section class="form-client" style="padding-bottom: 15px;margin-top: 10px;padding-top: 15px">
+		<section class="form-client">
 				<div class="container">
-				    <div class="row" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8); padding-top: 15px">
+				    <div class="row" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,0.8); padding-top: 15px;background: #b5d33d;color: #ffffff">
 				        <div class="col-md-12">
-				            <div class="well well-sm" style="">
-								<form>
+				            <div class="" style="">
+								<form style="">
 
 									<div class="form-group"> 
 										<label for="firstname" class="control-label">First Name <span style="color: red" data-tooltip="tooltip" data-title="Please fill up this section">*</span></label>
@@ -220,7 +209,7 @@ and (max-width: 768px) {
 									
 									<div class="form-group"> 
 										<label for="" class="control-label">Would you like to submit any available job description?</label>
-										<button type="button" class="btn btn-primary" id="submit-file">Yes</button>
+										<button type="button" class="btn btn-primary" style=" background: rgba(0,168,0); border: 0" id="submit-file">Yes</button>
 										<button type="button" class="btn btn-primary" id="cancel-submit" style="display: none;">No</button>
 									</div>   
 
@@ -230,7 +219,7 @@ and (max-width: 768px) {
 
 									<div class="form-group"> 
 										<label for="" class="control-label"></label>
-										<center><button type="submit" class="btn btn-primary btn-flat" >Submit</button></center>
+										<center><button type="submit" class="btn btn-primary btn-flat" style="background: rgba(0,168,0); border: 0">Submit</button></center>
 									</div>  								
 									
 								</form>	
@@ -278,8 +267,8 @@ and (max-width: 768px) {
 									<div class="form-group">
 										<textarea class="form-control" style="width: 100%;resize: none" rows="10" placeholder="Message" ></textarea>
 									</div>
-									<div class="form-group">
-										<button type="button" class="btn btn-primary btn-flat pull-left">Submit</button>
+									<div class="form-group pull-right">
+										<button type="button" class="btn btn-primary btn-flat btn-sm ">Submit</button>
 									</div>
 								</form>
 							</div>

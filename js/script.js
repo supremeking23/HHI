@@ -1,6 +1,6 @@
 $(function(){
 
-
+	//minified this
 	//index banner
 	//$(".text-one").addClass('animated fadeInLeft');
 	// scroll body to 0px on click
@@ -14,25 +14,15 @@ $(function(){
     $('#learnMore').click(function () {
        $('html, body').animate({scrollTop: $('.main-body').offset().top = 690}, 1000); 
     });
-
-
 	$('#btnbacktoTopTwo').click(function () {
 		$('body,html').animate({
 			scrollTop: 0
 		}, 800);
 		return false;
 	});
-
-
-
 	$('[data-tooltip="tooltip"]').tooltip();
 	//alert(1);
-
-
-
 	/* Animations on scroll */
-
-
 	$( ".btn-hide-social-media" ).click(function() {
 		var data_arrow = $(this).data("arrow");
 		
@@ -54,8 +44,6 @@ $(function(){
 		//alert(data_value);
 	  $( ".social-media" ).toggle("slide");
 	});
-
-	
 
     $('.why-hunters-hub').waypoint(function(direction) {
         if (direction == "down") {
@@ -143,9 +131,6 @@ $(function(){
 	});
 
 
-
-
-
 	$('.content-mission-vision').waypoint(function(direction) {
 	    $('.content-mission-vision').addClass('animated fadeIn');
 	    /*$('.site-logo').addClass('animated fadeInUp');*/
@@ -163,7 +148,6 @@ $(function(){
 	    offset: '50%'
 	});
 	
-
 
 	$('.core-values-row').waypoint(function(direction) {
 	    $('.core-values-row').addClass('animated fadeIn');
@@ -220,16 +204,6 @@ $(function(){
 	});*/
 
 
-
-
-
-
-
-
-
-
-
-
 	$('#testing1').on('click',function(){
 		alert('12');
 	});
@@ -265,6 +239,10 @@ $(function(){
 
 		console.log('counter is' + counter);
 	});*/
+
+	$('.facebook').click(function(){
+		open("https://www.facebook.com/Hunters-Hub-Incorporated-208732030013230/","","height=150");
+	});
 
 });
 

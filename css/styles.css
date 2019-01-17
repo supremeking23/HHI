@@ -84,7 +84,8 @@ header .navbar{
 }
 
 header .navbar-default {
-  background-color: transparent;
+  /*background-color: transparent;*/
+   background: #1a2455;
  /* background: rgba(22,19,180,.6);*/
   border: none;
 }
